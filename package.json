@@ -10,6 +10,7 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "20.1.5",
     "@types/react": "18.2.6",

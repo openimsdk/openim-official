@@ -1,8 +1,9 @@
 import NavBar from "@/components/navbar/NavBar"
 import "./globals.scss"
 import { Inter } from "next/font/google"
+import FooterBar from "@/components/footerBar/FooterBar"
 
-const inter = Inter({ subsets: ["latin"] })
+// const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "OpenIM Official",
@@ -12,9 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/*<body className={inter.className}>*/}
+      {/*  <NavBar />*/}
+      {/*  {children}*/}
+      {/*</body>*/}
+      <body>
         <NavBar />
         {children}
+        <FooterBar />
       </body>
     </html>
   )

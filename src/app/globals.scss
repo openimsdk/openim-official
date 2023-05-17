@@ -14,7 +14,37 @@ html {
 }
 
 body {
-  height: var(--full-height);
+  min-height: var(--full-height);
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(180deg, #000000 0%, #000821 20%, #030819 27%, #000A2B 37%, #00061A 70%, #000000 100%);
+}
+
+.btn_polygon{
+  clip-path: polygon(
+                  0% 10px ,
+                  0% 100% ,
+                  calc(100% - 10px) 100% ,
+                  100% calc(100% - 10px) ,
+                  100% 0% , 10px 0%);
+}
+
+.btn_polygon_border{
+  clip-path: polygon(
+                  10px 0,
+                  0 10px,
+                  0px 100%,
+                  1px 100%,
+
+                  1px 11px,
+                  11px 1px,
+                  calc(100% - 1px) 1px,
+                  calc(100% - 1px) calc(100% - 11px),
+                  calc(100% - 11px) calc(100% - 1px),
+                  1px calc(100% - 1px),
+
+                  1px 100%,
+                  calc(100% - 10px)  100%,
+                  100%  calc(100% - 10px),
+                  100% 0%
+  );
 }

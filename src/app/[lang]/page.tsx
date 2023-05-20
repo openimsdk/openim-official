@@ -284,12 +284,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <p className="mx-[8vw] py-3 text-sm sm:px-0 sm:py-0 sm:text-base">
           {dictionary["home"].part8.desc2}
         </p>
-        <p className="pt-8 text-sm opacity-50 sm:pt-16 sm:text-base">
+        <p className="mx-[8vw] pt-8 text-sm opacity-50 sm:pt-16 sm:text-base">
           {dictionary["home"].part8.desc3}
         </p>
-        <Image src="/images/types.jpg" alt="types" width={2000} height={400}></Image>
+        <Image src="/images/types.jpg" alt="types" width={1000} height={400}></Image>
       </div>
-      <div className="flex flex-col items-center py-28 sm:py-40">
+      <div className="mx-[8vw] flex flex-col items-center py-28 sm:py-40">
         <div>
           <span className="text-xl text-[#006CFFFF] sm:text-2xl md:text-3xl ">
             {dictionary["home"].part9.title_pre}
@@ -298,7 +298,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             {dictionary["home"].part9.title}
           </span>
         </div>
-        <p className="pt-4 text-xs sm:text-lg">{dictionary["home"].part9.desc}</p>
+        <p className=" pt-4 text-xs sm:text-lg">{dictionary["home"].part9.desc}</p>
         <div className="mb-6 mt-10 flex flex-row md:mt-24">
           <button className="btn_polygon  h-8 w-32 bg-[#006CFFFF] md:h-12 md:w-44 md:flex-shrink-0">
             {dictionary["home"].part9.btn_begin}
@@ -307,7 +307,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             <div className="btn_polygon_border h-8 w-32 bg-white md:h-12 md:w-44"></div>
             <button className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-8 w-32 flex-row items-center justify-center md:h-12 md:w-44">
               <p>{dictionary["home"].part9.btn_docs}</p>
-              <ChevronRightIcon className="h-6 w-8 pl-2 text-[#006CFFFF]" />
+              <ChevronRightIcon className="h-6 w-6 text-[#006CFFFF] sm:pl-2" />
             </button>
           </div>
         </div>

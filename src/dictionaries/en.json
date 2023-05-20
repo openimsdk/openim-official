@@ -4,7 +4,7 @@
       "en": "Open source,free,and universal instant messaging components",
       "text": "",
       "desc": "Open-IM has borrowed and optimized the communication architecture of WeChat, achieving important features such as high performance, lightweight, and easy scalability. By integrating Open-IM components and privatizing the deployment of servers, developers can integrate instant messaging and real-time network capabilities into their own applications for free and quickly, while ensuring the security and privacy of business data.",
-      "btn_begin": "Start experiencing",
+      "btn_begin": "Start",
       "btn_docs": "Document"
     },
     "part2": {
@@ -35,7 +35,7 @@
     "part6": {
       "title_pre": "IM feature ",
       "title": "function",
-      "img": "/images/feature.en.png",
+      "img": "/images/feature_en.png",
       "desc": "Once opened, it will burn and disappear within 30 seconds after being read. It supports multiple durations. Message editing makes communication more interesting."
     },
     "part7": {
@@ -69,7 +69,7 @@
       "title_pre": "Open source,free,and universal instant ",
       "title": "messaging components",
       "desc": "Open source,free,and universal instant messaging components",
-      "btn_begin": "Start experiencing",
+      "btn_begin": "Start",
       "btn_docs": "Document"
     }
   }

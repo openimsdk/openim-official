@@ -142,11 +142,11 @@ const NavBar = () => {
             })}
           </ul>
         </div>
-        <div className="mr-3">
+        <div className="mr-0.5 sm:mr-3">
           <Image src="/fonts/logo.png" alt="" width={25} height={25} quality={100} />
         </div>
         <a
-          className="btn-ghost btn text-xl normal-case"
+          className="btn-ghost btn text-base normal-case sm:text-xl"
           onClick={() => router.push("/")}
         >
           OpenIM

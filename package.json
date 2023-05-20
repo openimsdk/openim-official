@@ -10,6 +10,9 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "0.2.32",
+    "negotiator": "0.6.3",
+    "server-only": "0.0.1",
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "20.1.5",
@@ -28,6 +31,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/negotiator": "0.6.1",
     "@typescript-eslint/eslint-plugin": "^5.59.6",
     "@typescript-eslint/parser": "^5.59.6",
     "eslint-config-prettier": "^8.8.0",

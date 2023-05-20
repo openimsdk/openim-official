@@ -2,33 +2,99 @@
 
 import { usePathname, useRouter } from "next/navigation"
 import Link from "next/link"
+import Image from "next/image"
+import { ChevronDownIcon } from "@heroicons/react/20/solid"
+import { useEffect, useState } from "react"
+import type { Locale } from "../../i18n-config"
 
 const navLinks = [
   {
     name: "首页",
-    href: "/",
+    href: "/zh",
   },
   {
     name: "体验Demo",
-    href: "/demo",
+    href: "/zh/demo",
   },
   {
     name: "开发者中心",
-    href: "/developer",
+    href: "/zh/developer",
   },
   {
     name: "定价",
-    href: "/price",
+    href: "/zh/price",
   },
   {
     name: "社区",
-    href: "/community",
+    href: "/zh/community",
   },
 ]
 
+const text = {
+  zh: {
+    docs: "阅读文档",
+    start: "开始体验",
+    language: "语言",
+    navLinks: [
+      {
+        name: "首页",
+        href: "/zh",
+      },
+      {
+        name: "体验Demo",
+        href: "/zh/demo",
+      },
+      {
+        name: "开发者中心",
+        href: "/zh/developer",
+      },
+      {
+        name: "定价",
+        href: "/zh/price",
+      },
+      {
+        name: "关于我们",
+        href: "/zh/about",
+      },
+    ],
+  },
+  en: {
+    docs: "Document",
+    start: "Start experiencing",
+    language: "language",
+    navLinks: [
+      {
+        name: "Home",
+        href: "/en",
+      },
+      {
+        name: "Demo",
+        href: "/en/demo",
+      },
+      {
+        name: "Develop Center",
+        href: "/en/developer",
+      },
+      {
+        name: "Price",
+        href: "/en/price",
+      },
+      {
+        name: "About us",
+        href: "/en/about",
+      },
+    ],
+  },
+}
+
 const NavBar = () => {
+  const [language, setLanguage] = useState<Locale>("en")
   const pathname = usePathname()
   const router = useRouter()
+
+  useEffect(() => {
+    setLanguage(pathname.split("/")[1] as Locale)
+  }, [pathname])
 
   return (
     <div className="navbar border-b border-[rgba(255,255,255,.2)] px-[8vw]">
@@ -54,9 +120,9 @@ const NavBar = () => {
             tabIndex={0}
             className="dropdown-content menu rounded-box menu-compact mt-3 w-52 p-2 shadow"
           >
-            {navLinks.map((link) => {
+            {text[language].navLinks.map((link) => {
               const isActive =
-                link.href === "/"
+                link.href === "/zh"
                   ? pathname === link.href
                   : pathname.startsWith(link.href)
               return (
@@ -76,7 +142,9 @@ const NavBar = () => {
             })}
           </ul>
         </div>
-        <div className="mr-3">ICON</div>
+        <div className="mr-3">
+          <Image src="/fonts/logo.png" alt="" width={25} height={25} quality={100} />
+        </div>
         <a
           className="btn-ghost btn text-xl normal-case"
           onClick={() => router.push("/")}
@@ -85,14 +153,14 @@ const NavBar = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {navLinks.map((link) => {
+        <ul className="flex flex-row  px-1">
+          {text[language].navLinks.map((link) => {
             const isActive =
               link.href === "/"
                 ? pathname === link.href
                 : pathname.startsWith(link.href)
             return (
-              <li key={link.name}>
+              <li key={link.name} className="px-2 text-sm">
                 <Link
                   className={
                     isActive
@@ -109,7 +177,37 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="flex-1 justify-end">
-        <a className="btn">Get started</a>
+        <div className="hidden md:flex md:flex-row md:items-center md:pr-8">
+          <Image src="/fonts/github.png" alt="" width={20} height={20} quality={100} />
+          <span className="ml-2">4,841</span>
+        </div>
+
+        <button className="hidden  sm:btn-outline sm:btn-sm sm:btn sm:text-white sm:hover:bg-black">
+          <p className="text-xs font-normal">{text[language].docs}</p>
+        </button>
+        <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#006CFFFF]">
+          <p className="text-xs font-normal">{text[language].start}</p>
+        </button>
+        <div className="dropdown dropdown-hover">
+          <label
+            tabIndex={0}
+            className="btn-outline btn-sm btn m-1 flex flex-row text-white hover:bg-black"
+          >
+            <p className="text-xs font-normal">{text[language].language}</p>
+            <ChevronDownIcon className="h-4 w-4 text-white"></ChevronDownIcon>
+          </label>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu rounded-box  p-2 text-white shadow"
+          >
+            <li className="border text-center text-sm hover:bg-gray-900">
+              <Link href="/zh">中文</Link>
+            </li>
+            <li className="border text-center text-sm hover:bg-gray-900">
+              <Link href="/en">English</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )

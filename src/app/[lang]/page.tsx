@@ -287,7 +287,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <p className="mx-[8vw] pt-8 text-sm opacity-50 sm:pt-16 sm:text-base">
           {dictionary["home"].part8.desc3}
         </p>
-        <Image src="/images/types.jpg" alt="types" width={1000} height={400}></Image>
+        <Image src="/images/types.jpg" alt="types" width={1600} height={400}></Image>
       </div>
       <div className="mx-[8vw] flex flex-col items-center py-28 sm:py-40">
         <div>

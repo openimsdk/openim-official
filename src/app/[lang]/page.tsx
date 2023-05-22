@@ -187,7 +187,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         />
         <div className=" relative md:order-2 md:w-7/12">
           <Image
-            className="right-0 top-0 mr-[8vw] md:absolute"
+            className="right-0 top-0 z-40 mr-[8vw] md:absolute"
             src={dictionary.home.part5.img}
             alt=""
             width={550}
@@ -346,12 +346,16 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <p className=" pt-4 text-xs sm:text-lg">{dictionary["home"].part9.desc}</p>
         <div className="mb-6 mt-10 flex flex-row md:mt-24">
           <button className="btn_polygon  h-8 w-32 bg-[#006CFFFF] md:h-12 md:w-44 md:flex-shrink-0">
-            {dictionary["home"].part9.btn_begin}
+            <Link href="https://github.com/OpenIMSDK">
+              {dictionary["home"].part9.btn_begin}
+            </Link>
           </button>
           <div className="relative ml-5 h-8 w-32 md:h-12 md:w-44">
             <div className="btn_polygon_border h-8 w-32 bg-white md:h-12 md:w-44"></div>
             <button className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-8 w-32 flex-row items-center justify-center md:h-12 md:w-44">
-              <p>{dictionary["home"].part9.btn_docs}</p>
+              <Link href="https://doc.rentsoft.cn">
+                {dictionary["home"].part9.btn_docs}
+              </Link>
               <ChevronRightIcon className="h-6 w-6 text-[#006CFFFF] sm:pl-2" />
             </button>
           </div>

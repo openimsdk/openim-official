@@ -95,7 +95,7 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 p-2 shadow"
+            className="dropdown-content menu rounded-box menu-compact mt-3 w-36 p-2 shadow"
           >
             {text[language].navLinks.map((link) => {
               const isActive =
@@ -103,7 +103,10 @@ const NavBar = () => {
                   ? pathname === link.href
                   : pathname.startsWith(link.href)
               return (
-                <li key={link.name}>
+                <li
+                  key={link.name}
+                  className="border-b bg-black  text-sm hover:bg-gray-900"
+                >
                   <Link
                     className={
                       isActive
@@ -160,10 +163,14 @@ const NavBar = () => {
         </div>
 
         <button className="hidden  sm:btn-outline sm:btn-sm sm:btn sm:text-white sm:hover:bg-black">
-          <p className="text-xs font-normal">{text[language].docs}</p>
+          <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">
+            {text[language].docs}
+          </Link>
         </button>
         <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#006CFFFF]">
-          <p className="text-xs font-normal">{text[language].start}</p>
+          <Link href="https://github.com/OpenIMSDK" className="text-xs font-normal">
+            {text[language].start}
+          </Link>
         </button>
         <div className="dropdown dropdown-hover">
           <label
@@ -177,10 +184,10 @@ const NavBar = () => {
             tabIndex={0}
             className="dropdown-content menu rounded-box  p-2 text-white shadow"
           >
-            <li className="border text-center text-sm hover:bg-gray-900">
+            <li className="border-b text-center text-sm hover:bg-gray-900">
               <Link href="/zh">中文</Link>
             </li>
-            <li className="border text-center text-sm hover:bg-gray-900">
+            <li className=" text-center text-sm hover:bg-gray-900">
               <Link href="/en">English</Link>
             </li>
           </ul>

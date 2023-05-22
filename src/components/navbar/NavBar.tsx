@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ChevronDownIcon } from "@heroicons/react/20/solid"
 import { useEffect, useState } from "react"
-import type { Locale } from "../../i18n-config"
+import type { Locale } from "@/i18n-config"
 
 const text = {
   zh: {
@@ -72,6 +72,25 @@ const NavBar = () => {
   useEffect(() => {
     setLanguage(pathname.split("/")[1] as Locale)
   }, [pathname])
+
+  // useEffect(() => {
+  //   fetch("https://api.github.com/repos/{owner}/{repo}", {
+  //     headers: {
+  //       Authorization: "token {personal_access_token}",
+  //     },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  //       const starCount = data.stargazers_count as number
+  //       console.log(starCount)
+  //       // 在页面上显示star数目
+  //       // ...
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error)
+  //     })
+  // }, [])
 
   return (
     <div className="navbar border-b border-[rgba(255,255,255,.2)] px-[8vw]">
@@ -158,10 +177,12 @@ const NavBar = () => {
       </div>
       <div className="flex-1 justify-end">
         <div className="hidden md:flex md:flex-row md:items-center md:pr-8">
-          <Image src="/fonts/github.png" alt="" width={20} height={20} quality={100} />
-          <span className="ml-2">4,841</span>
+          <img
+            className="h-6 w-28"
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/OpenIMSDK/Open-IM-Server?style=social"
+          />
         </div>
-
         <button className="hidden  sm:btn-outline sm:btn-sm sm:btn sm:text-white sm:hover:bg-black">
           <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">
             {text[language].docs}

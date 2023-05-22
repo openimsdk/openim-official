@@ -40,7 +40,13 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </div>
         </div>
         <div className="w-full sm:pl-2 md:w-1/2 md:pl-5 xl:pl-20">
-          <Image width={554} height={400} src="/images/code.jpg" alt="code" />
+          <Image
+            width={554}
+            height={400}
+            src="/images/code.png"
+            quality={100}
+            alt="code"
+          />
         </div>
       </div>
       <div className="relative mx-[8vw]">
@@ -267,7 +273,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             <li className="mb-8 flex flex-row sm:mb-12">
               <span className="pr-4 pt-4 opacity-50">01</span>
               <div>
-                <p className="text-lg sm:text-2xl">
+                <p className="text-2xl sm:text-4xl">
                   {dictionary["home"].part7.t1.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
@@ -279,7 +285,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             <li className="mb-8 flex flex-row sm:mb-12">
               <span className="pr-4 pt-4 opacity-50">02</span>
               <div>
-                <p className="text-lg sm:text-2xl">
+                <p className="text-2xl sm:text-4xl">
                   {dictionary["home"].part7.t2.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
@@ -291,7 +297,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             <li className="mb-8 flex flex-row sm:mb-12">
               <span className="pr-4 pt-4 opacity-50">03</span>
               <div>
-                <p className="text-lg sm:text-2xl">
+                <p className="text-2xl sm:text-4xl">
                   {dictionary["home"].part7.t3.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
@@ -303,7 +309,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             <li className="mb-8 flex flex-row sm:mb-12">
               <span className="pr-4 pt-4 opacity-50">04</span>
               <div>
-                <p className="text-lg sm:text-2xl">
+                <p className="text-2xl sm:text-4xl">
                   {dictionary["home"].part7.t4.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
@@ -326,11 +332,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <p className="mx-[8vw] text-sm sm:px-0 sm:text-base">
           {dictionary["home"].part8.desc1}
         </p>
-        <p className="mx-[8vw] py-3 text-sm sm:px-0 sm:py-0 sm:text-base">
-          {dictionary["home"].part8.desc2}
-        </p>
         <p className="mx-[8vw] pt-8 text-sm opacity-50 sm:pt-16 sm:text-base">
-          {dictionary["home"].part8.desc3}
+          {dictionary["home"].part8.desc2}
         </p>
         <Image src="/images/types.jpg" alt="types" width={1600} height={400}></Image>
       </div>

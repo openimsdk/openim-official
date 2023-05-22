@@ -2,11 +2,12 @@ import Image from "next/image"
 import { ChevronRightIcon } from "@heroicons/react/20/solid"
 import { getDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
+import Link from "next/link"
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang)
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <div className="mx-[8vw] my-20 sm:my-36 md:flex md:flex-row md:justify-between">
         <div className="w-full sm:pr-2 md:w-1/2 md:pr-5  xl:pr-20">
           <p className="bg-gradient-to-b from-[#006CFFFF] to-[#0062FFFF] bg-clip-text  text-xl font-semibold  text-transparent sm:text-2xl  lg:text-3xl xl:text-4xl">
@@ -23,12 +24,16 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </p>
           <div className="mb-6 mt-10 flex flex-row md:mt-24">
             <button className="btn_polygon  h-8 w-32 bg-[#006CFFFF] md:h-12 md:w-44 md:flex-shrink-0">
-              {dictionary["home"].part1.btn_begin}
+              <Link href="https://github.com/OpenIMSDK">
+                {dictionary["home"].part1.btn_begin}
+              </Link>
             </button>
             <div className="relative ml-5 h-8 w-32 md:h-12 md:w-44">
               <div className="btn_polygon_border h-8 w-32 bg-white md:h-12 md:w-44"></div>
               <button className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-8 w-32 flex-row items-center justify-center md:h-12 md:w-44">
-                <p>{dictionary["home"].part1.btn_docs}</p>
+                <Link href="https://doc.rentsoft.cn/">
+                  {dictionary["home"].part1.btn_docs}
+                </Link>
                 <ChevronRightIcon className="h-6 w-8 pl-2 text-[#006CFFFF]" />
               </button>
             </div>
@@ -61,7 +66,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
                 alt="github"
                 className="mr-3 md:mr-6"
               />
-              <p className="text-sm md:text-base">{dictionary["home"].part2.github}</p>
+              <Link
+                href="https://github.com/OpenIMSDK"
+                className="text-sm md:text-base"
+              >
+                {dictionary["home"].part2.github}
+              </Link>
             </button>
           </div>
           <div className="relative ml-3 h-8 w-40 md:h-12 md:w-44">
@@ -80,12 +90,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         </div>
         <div className="flex flex-row justify-center py-10 sm:py-20">
           <div>
-            <p className="pb-4 text-3xl font-thin sm:text-4xl">8.9K</p>
+            <p className="pb-4 text-3xl font-thin sm:text-4xl">11K</p>
             <p className="text-xs font-thin">GITHUB STARS</p>
           </div>
           <div className="px-6 sm:px-20">
-            <p className="pb-4 text-3xl font-thin sm:text-4xl">2.0K</p>
-            <p className="text-xs font-thin">SLACK MEMBERS</p>
+            <p className="pb-4 text-3xl font-thin sm:text-4xl">10K</p>
+            <p className="text-xs font-thin">WeChat MEMBERS</p>
           </div>
           <div>
             <p className="pb-4 text-3xl font-thin sm:text-4xl">2.0K</p>
@@ -101,16 +111,16 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         >
           <Image src="/images/honeycomb.png" alt="" width={200} height={200} />
         </div>
-        <div
-          className="absolute right-0"
-          style={{
-            bottom: `${-10}vw`,
-          }}
-        >
-          <Image src="/images/arrowdown.png" alt="" width={20} height={30} />
-        </div>
+
+        <Image
+          className="absolute -bottom-16 right-0 sm:-bottom-32"
+          src="/images/arrowdown.png"
+          alt=""
+          width={20}
+          height={30}
+        />
       </div>
-      <div className="mx-[8vw] mt-20 md:mt-60 md:flex md:h-96 md:flex-row md:justify-between ">
+      <div className="mx-[8vw] mt-20 md:mt-56 md:flex md:h-96 md:flex-row md:justify-between ">
         <div className="md:relative md:order-2 md:w-7/12">
           <Image
             className=" right-0 top-0 md:absolute"
@@ -135,8 +145,15 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </p>
         </div>
       </div>
-      <div className="mx-[8vw] mt-20 md:mt-56 md:flex md:h-96 md:flex-row md:justify-between ">
-        <div className="md:relative md:order-2 md:w-7/12">
+      <div className="relative mx-[8vw] mt-20 md:mt-56 md:flex md:h-96 md:flex-row md:justify-between ">
+        <Image
+          className="absolute -bottom-16 left-0 hidden sm:-bottom-32 sm:block"
+          src="/images/arrowdown.png"
+          alt=""
+          width={20}
+          height={30}
+        />
+        <div className=" md:relative md:order-2 md:w-7/12">
           <Image
             className=" right-0 top-0 md:absolute"
             src={dictionary.home.part4.img}
@@ -146,7 +163,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             quality={100}
           />
         </div>
-        <div className="pt-16 md:order-1 md:w-5/12 lg:pt-28">
+        <div className=" pt-16 md:order-1 md:w-5/12 lg:pt-28">
           <div>
             <span className="text-xl  lg:text-2xl">
               {dictionary["home"].part4.title_pre}
@@ -160,18 +177,39 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </p>
         </div>
       </div>
-      <div className="mx-[8vw] mt-20 md:mt-56 md:flex md:h-96 md:flex-row md:justify-between ">
-        <div className="md:relative md:order-2 md:w-7/12">
+      <div className="relative mt-20 md:mt-56 md:flex md:h-96 md:flex-row md:justify-between ">
+        <Image
+          className="absolute -right-5 -top-10 rotate-180 transform"
+          src="/images/honeycomb.png"
+          alt=""
+          width={250}
+          height={200}
+        />
+        <div className=" relative md:order-2 md:w-7/12">
           <Image
-            className=" right-0 top-0 md:absolute"
-            src={dictionary.home.part4.img}
+            className="right-0 top-0 mr-[8vw] md:absolute"
+            src={dictionary.home.part5.img}
             alt=""
-            width={640}
-            height={536}
+            width={550}
+            height={436}
             quality={100}
           />
+          <Image
+            className="absolute  bottom-0 right-0 md:bottom-auto md:mt-32 "
+            src="/images/circle.png"
+            alt=""
+            width={680}
+            height={400}
+          />
+          <Image
+            className="absolute right-0 mr-[8vw] hidden sm:block md:-bottom-60 "
+            src="/images/arrowdown.png"
+            alt=""
+            width={20}
+            height={30}
+          />
         </div>
-        <div className="pt-16 md:order-1 md:w-5/12 lg:pt-28">
+        <div className="ml-[8vw] pt-16 md:order-1 md:w-5/12 lg:pt-28">
           <div>
             <span className="text-xl  lg:text-2xl">
               {dictionary["home"].part5.title_pre}
@@ -185,8 +223,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </p>
         </div>
       </div>
-      <div className="mx-[8vw] my-20 md:my-56 md:flex md:h-96 md:flex-row md:justify-between ">
-        <div className="md:relative md:order-2 md:w-7/12">
+      <div className="mx-[8vw] my-20 md:my-80 md:flex md:h-96 md:flex-row md:justify-between ">
+        <div className=" md:relative md:order-2 md:w-7/12">
           <Image
             className=" right-0 top-0 md:absolute"
             src={dictionary.home.part6.img}
@@ -196,7 +234,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             quality={100}
           />
         </div>
-        <div className="pt-16 md:order-1 md:w-5/12 lg:pt-28">
+        <div className=" pt-16 md:order-1 md:w-5/12 lg:pt-28">
           <div>
             <span className="text-xl  lg:text-2xl">
               {dictionary["home"].part6.title_pre}
@@ -210,14 +248,21 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </p>
         </div>
       </div>
-      <div className="mx-[8vw] md:flex md:flex-row md:justify-between md:pb-12 md:pt-28">
-        <div className="pb-16 md:flex-1 md:py-0">
+      <div className="relative md:flex md:flex-row md:justify-between md:pb-12 md:pt-28">
+        <Image
+          className="absolute -left-10 -top-32"
+          src="/images/honeycomb.png"
+          alt=""
+          width={200}
+          height={200}
+        />
+        <div className="mx-[8vw] pb-16 md:ml-[8vw] md:mr-0 md:flex-1 md:py-0">
           <span className="text-4xl">{dictionary["home"].part7.title_pre}</span>
           <span className="text-4xl text-[#006CFFFF]">
             {dictionary["home"].part7.title}
           </span>
         </div>
-        <div className="md:flex-1">
+        <div className="mx-[8vw] md:ml-0 md:mr-[8vw] md:flex-1">
           <ul>
             <li className="mb-8 flex flex-row sm:mb-12">
               <span className="pr-4 pt-4 opacity-50">01</span>

@@ -7,29 +7,6 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid"
 import { useEffect, useState } from "react"
 import type { Locale } from "../../i18n-config"
 
-const navLinks = [
-  {
-    name: "首页",
-    href: "/zh",
-  },
-  {
-    name: "体验Demo",
-    href: "/zh/demo",
-  },
-  {
-    name: "开发者中心",
-    href: "/zh/developer",
-  },
-  {
-    name: "定价",
-    href: "/zh/price",
-  },
-  {
-    name: "社区",
-    href: "/zh/community",
-  },
-]
-
 const text = {
   zh: {
     docs: "阅读文档",
@@ -88,7 +65,7 @@ const text = {
 }
 
 const NavBar = () => {
-  const [language, setLanguage] = useState<Locale>("en")
+  const [language, setLanguage] = useState<Locale>("zh")
   const pathname = usePathname()
   const router = useRouter()
 

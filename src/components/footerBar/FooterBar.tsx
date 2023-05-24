@@ -22,7 +22,7 @@ const FooterBar = () => {
           <span className="footer-title">联系我们</span>
           <a className="link-hover link">商业微信</a>
           <a className="link-hover link">XiaoHong_yaokaixinya</a>
-          <Image src="/images/wangpan.png" alt="" width={60} height={60} />
+          <Image src="/images/contact.jpg" alt="" width={60} height={60} />
         </div>
       </footer>
       <div className="footer-center py-20">

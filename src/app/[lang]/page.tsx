@@ -3,7 +3,6 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid"
 import { getDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 import Link from "next/link"
-import WeChatButton from "@/components/home_components/WeChatButton"
 import DemoShow from "@/components/home_components/DemoShow"
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
@@ -56,22 +55,21 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           />
         </div>
       </div>
-      <div className="relative mx-[8vw]">
+      <div className="relative ">
         <div className="flex flex-row justify-center">
-          <p className="text-xl font-semibold  sm:text-2xl lg:text-3xl xl:text-4xl ">
+          <span className="pr-1 text-xs font-semibold sm:text-2xl  md:pr-2 lg:text-3xl xl:text-4xl ">
             {dictionary["home"].part2.title_pre}
-          </p>
-          <span className="text-xl font-semibold  text-[#006CFFFF] sm:text-2xl lg:text-3xl xl:text-4xl">
+          </span>
+          <span className="text-xs font-semibold  text-[#006CFFFF] sm:text-2xl lg:text-3xl xl:text-4xl">
             {dictionary["home"].part2.title}
           </span>
         </div>
-        <p className="py-5 text-center text-sm sm:text-base lg:text-xl">
+        <p className="mx-[8vw] py-5 text-center text-xs sm:text-base lg:text-xl">
           {dictionary["home"].part2.desc}
         </p>
-        <div className="flex flex-row justify-center py-4">
+        <div className="mx-[8vw] flex flex-row justify-center py-4">
           <div className="relative ml-5 h-8 w-40 md:h-12 md:w-44">
             <div className="btn_polygon_border h-8 w-40 bg-white md:h-12 md:w-44"></div>
-
             <Link
               href="https://github.com/OpenIMSDK"
               className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-8 w-40 flex-row items-center justify-center text-sm md:h-12 md:w-44 md:text-base"
@@ -86,21 +84,32 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
               <p>{dictionary["home"].part2.github}</p>
             </Link>
           </div>
-          <WeChatButton
-            params={{
-              text: String(dictionary["home"].part2.join),
-            }}
-          />
+          <div className="relative ml-3 h-8 w-40 md:h-12 md:w-44">
+            <div className="btn_polygon_border h-8 w-40 bg-white md:h-12 md:w-44"></div>
+            <Link
+              href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
+              className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-8 w-40 flex-row items-center justify-center text-sm md:h-12 md:w-44 md:text-base"
+            >
+              <Image
+                width={16}
+                height={16}
+                src="/fonts/slack.png"
+                alt="github"
+                className="mr-2 md:mr-4"
+              />
+              <p>{dictionary["home"].part2.join}</p>
+            </Link>
+          </div>
         </div>
 
-        <div className="flex flex-row justify-center py-10 sm:py-20">
+        <div className="mx-[8vw] flex flex-row justify-center py-10 sm:py-20">
           <div>
             <p className="pb-4 text-3xl font-thin sm:text-4xl">11K</p>
             <p className="text-xs font-thin">GITHUB STARS</p>
           </div>
           <div className="px-6 sm:px-20">
-            <p className="pb-4 text-3xl font-thin sm:text-4xl">10K</p>
-            <p className="text-xs font-thin">WeChat MEMBERS</p>
+            <p className="pb-4 text-3xl font-thin sm:text-4xl">0.1K</p>
+            <p className="text-xs font-thin">Slack MEMBERS</p>
           </div>
           <div>
             <p className="pb-4 text-3xl font-thin sm:text-4xl">2.0K</p>
@@ -108,7 +117,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           </div>
         </div>
         <div
-          className="absolute"
+          className="absolute mx-[8vw]"
           style={{
             left: `${-10}vw`,
             bottom: `${-10}vw`,
@@ -214,7 +223,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             height={30}
           />
         </div>
-        <div className="ml-[8vw] pt-16 md:order-1 md:w-5/12 lg:pt-28">
+        <div className="mx-[8vw] pt-16 md:order-1 md:w-5/12 lg:pt-28">
           <div>
             <span className="text-xl  lg:text-2xl">
               {dictionary["home"].part5.title_pre}
@@ -269,46 +278,46 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         </div>
         <div className="mx-[8vw] md:ml-0 md:mr-[8vw] md:flex-1">
           <ul>
-            <li className="mb-8 flex flex-row sm:mb-12">
+            <li className="mb-8 flex flex-row ">
               <span className="pr-4 pt-4 opacity-50">01</span>
               <div>
-                <p className="text-2xl sm:text-4xl">
+                <p className="text-2xl sm:text-2xl">
                   {dictionary["home"].part7.t1.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
                   {dictionary["home"].part7.t1.desc}
                 </p>
-                <div className="border-b pb-5 opacity-20"></div>
+                <div className="border-b pb-2 opacity-20"></div>
               </div>
             </li>
-            <li className="mb-8 flex flex-row sm:mb-12">
+            <li className="mb-8 flex flex-row ">
               <span className="pr-4 pt-4 opacity-50">02</span>
               <div>
-                <p className="text-2xl sm:text-4xl">
+                <p className="text-2xl sm:text-2xl">
                   {dictionary["home"].part7.t2.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
                   {dictionary["home"].part7.t2.desc}
                 </p>
-                <div className="border-b pb-5 opacity-20"></div>
+                <div className="border-b pb-2 opacity-20"></div>
               </div>
             </li>
-            <li className="mb-8 flex flex-row sm:mb-12">
+            <li className="mb-8 flex flex-row">
               <span className="pr-4 pt-4 opacity-50">03</span>
               <div>
-                <p className="text-2xl sm:text-4xl">
+                <p className="text-2xl sm:text-2xl">
                   {dictionary["home"].part7.t3.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">
                   {dictionary["home"].part7.t3.desc}
                 </p>
-                <div className="border-b pb-5 opacity-20"></div>
+                <div className="border-b pb-2 opacity-20"></div>
               </div>
             </li>
-            <li className="mb-8 flex flex-row sm:mb-12">
+            <li className="mb-8 flex flex-row ">
               <span className="pr-4 pt-4 opacity-50">04</span>
               <div>
-                <p className="text-2xl sm:text-4xl">
+                <p className="text-2xl sm:text-2xl">
                   {dictionary["home"].part7.t4.title}
                 </p>
                 <p className="py-5 text-sm opacity-50 sm:text-base">

@@ -49,7 +49,7 @@ const text = {
         href: "/en/demo",
       },
       {
-        name: "Develop Center",
+        name: "Developer Center",
         href: "/en/developer",
       },
       {

@@ -87,7 +87,7 @@ const DemoShow = () => {
         WebkitMaskImage:
           "linear-gradient(to right, transparent,black 20%, black 70%,transparent)",
       }}
-      className="mx-[8vw] h-64 overflow-hidden"
+      className="mx-[8vw] h-32 overflow-hidden md:h-64"
     >
       <DemoRaw demos={demos} />
     </div>

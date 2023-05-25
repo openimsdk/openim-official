@@ -1,0 +1,12 @@
+@keyframes slide {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform: translateX(-30vw);
+  }
+}
+
+.cell {
+  animation: slide 36s linear infinite;
+}

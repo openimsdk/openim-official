@@ -1,6 +1,27 @@
+"use client"
+
 import Image from "next/image"
+import { useEffect, useState } from "react"
+import { Locale } from "@/i18n-config"
+import { usePathname, useRouter } from "next/navigation"
+
+const text = {
+  zh: {
+    product: "产品",
+    sdk: "开源SDK",
+    demo: "商用体验demo",
+  },
+  en: {},
+}
 
 const FooterBar = () => {
+  const [language, setLanguage] = useState<Locale>("zh")
+  const pathname = usePathname()
+  const router = useRouter()
+
+  useEffect(() => {
+    setLanguage(pathname.split("/")[1] as Locale)
+  }, [pathname])
   return (
     <div>
       <footer className="footer px-[8vw] py-10 text-neutral-content ">

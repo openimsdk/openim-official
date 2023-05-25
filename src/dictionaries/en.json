@@ -1,0 +1,75 @@
+{
+  "home": {
+    "part1": {
+      "en": "Open source,free,and universal instant messaging components",
+      "text": "",
+      "desc": "Open-IM has borrowed and optimized the communication architecture of WeChat, achieving important features such as high performance, lightweight, and easy scalability. By integrating Open-IM components and privatizing the deployment of servers, developers can integrate instant messaging and real-time network capabilities into their own applications for free and quickly, while ensuring the security and privacy of business data.",
+      "btn_begin": "Start",
+      "btn_docs": "Document"
+    },
+    "part2": {
+      "title_pre": "Join the world's best ",
+      "title": "builders",
+      "desc": "LiveKit's community of developers, from large enterprises to next-gen startups, are building the multiplayer internet. ",
+      "github": "View Github",
+      "join": "Join our Slack"
+    },
+    "part3": {
+      "title_pre": "Supports multiple message ",
+      "title": "types",
+      "img": "/images/message_en.png",
+      "desc": "Text messages, images, videos, voice, files, locations Multiple message types such as customization, referencing, and cards. Support 1 on 1 and multiplayer audio and video, with automatic clarity adjustment based on the network. "
+    },
+    "part4": {
+      "title_pre": "Efficient meetings anytime ",
+      "title": "anywhere",
+      "img": "/images/meeting_en.png",
+      "desc": "Based on IM's 100% reliable Bida signaling capability to connect the IM system and chat Deep integration of applications. Single conference support for simultaneous 100 person video, 1000 person subscription, Server audio and video recording. "
+    },
+    "part5": {
+      "title_pre": "Single chat and group chat ",
+      "title": "meet various social scenarios",
+      "img": "/images/social_en.png",
+      "desc": "LiveKit's community of developers,Fully covering social scenarios,quickly building social applications.Number of group building and group entry NoneRestrictions,new members can view historical messages,and large group messages can be loaded as needed,The group chat has read the receipt,accurate to specific members single person multiple people everyone.are building the multiplayer internet."
+    },
+    "part6": {
+      "title_pre": "IM feature ",
+      "title": "function",
+      "img": "/images/feature_en.png",
+      "desc": "Once opened, it will burn and disappear within 30 seconds after being read. It supports multiple durations. Message editing makes communication more interesting."
+    },
+    "part7": {
+      "title_pre": "The advantages of ",
+      "title": "OpenIM",
+      "t1": {
+        "title": "Created by IM technical experts",
+        "desc": "Excellent technical architecture,tested by a large number of users;"
+      },
+      "t2": {
+        "title": "One click deployment,easy integration.",
+        "desc": "The client is refined into a convenient integrated SDK,and the server is deployed with one click through Docker.The operation management system displays backend data;"
+      },
+      "t3": {
+        "title": "IM SDK fully open source",
+        "desc": "Increase the participation enthusiasm of the open source community, generate stickiness, inertia, identification,belonging, and loyalty, introduce more technology geeks,and further improve OpenIM;"
+      },
+      "t4": {
+        "title": "Open source for free",
+        "desc": "For enterprises using IM cloud services, they can save tens of thousands or even hundreds of thousands of expenses annually;"
+      }
+    },
+    "part8": {
+      "title_pre": "Built on ",
+      "title": "Open Source",
+      "desc1": "LiveKit's stack-media server, client SDKs,auxiliary services-is forever-free and open source.",
+      "desc2": "A growing set of video and audio repos to clone, contribute to, or fork:"
+    },
+    "part9": {
+      "title_pre": "Open source,free,and universal instant ",
+      "title": "messaging components",
+      "desc": "Open source,free,and universal instant messaging components",
+      "btn_begin": "Start",
+      "btn_docs": "Document"
+    }
+  }
+}

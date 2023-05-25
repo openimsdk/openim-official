@@ -118,7 +118,7 @@ const NavBar = () => {
           >
             {text[language].navLinks.map((link) => {
               const isActive =
-                link.href === "/zh"
+                link.href === `/${language}`
                   ? pathname === link.href
                   : pathname.startsWith(link.href)
               return (
@@ -155,7 +155,7 @@ const NavBar = () => {
         <ul className="flex flex-row  px-1">
           {text[language].navLinks.map((link) => {
             const isActive =
-              link.href === "/"
+              link.href === `/${language}`
                 ? pathname === link.href
                 : pathname.startsWith(link.href)
             return (

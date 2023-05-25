@@ -1,14 +1,14 @@
 import NavBar from "@/components/navbar/NavBar"
 import "./globals.scss"
-import { Inter } from "next/font/google"
 
 import FooterBar from "@/components/footerBar/FooterBar"
-
-// const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "OpenIM Official",
   description: "OpenIM Official",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
@@ -20,10 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-      {/*<body className={inter.className}>*/}
-      {/*  <NavBar />*/}
-      {/*  {children}*/}
-      {/*</body>*/}
       <body>
         <NavBar />
         {children}

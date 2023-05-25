@@ -177,13 +177,15 @@ const NavBar = () => {
       </div>
       <div className="flex-1 justify-end">
         <div className="hidden md:flex md:flex-row md:items-center md:pr-8">
-          <img
-            className="h-6 w-28"
-            alt="GitHub Repo stars"
-            src="https://img.shields.io/github/stars/OpenIMSDK/Open-IM-Server?style=social"
+          <Image
+            width={16}
+            height={16}
+            src="/images/nav_github_icon.png"
+            alt="github"
           />
+          <span className="ml-2">11k</span>
         </div>
-        <button className="hidden  sm:btn-outline sm:btn-sm sm:btn sm:text-white sm:hover:bg-black">
+        <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">
           <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">
             {text[language].docs}
           </Link>
@@ -196,19 +198,19 @@ const NavBar = () => {
         <div className="dropdown dropdown-hover">
           <label
             tabIndex={0}
-            className="btn-outline btn-sm btn m-1 flex flex-row text-white hover:bg-black"
+            className="btn-sm btn m-1 flex flex-row bg-black text-white hover:btn-outline"
           >
             <p className="text-xs font-normal">{text[language].language}</p>
             <ChevronDownIcon className="h-4 w-4 text-white"></ChevronDownIcon>
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu rounded-box  p-2 text-white shadow"
+            className="dropdown-content menu rounded border border-[#2c2c2c] bg-black text-white shadow"
           >
-            <li className="border-b text-center text-sm hover:bg-gray-900">
+            <li className="m-[2px] flex items-center text-sm hover:bg-[#2c2c2c]">
               <Link href="/zh">中文</Link>
             </li>
-            <li className=" text-center text-sm hover:bg-gray-900">
+            <li className="m-[2px] flex items-center text-sm hover:bg-[#2c2c2c]">
               <Link href="/en">English</Link>
             </li>
           </ul>

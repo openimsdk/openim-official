@@ -73,6 +73,133 @@ const zh = {
       btn_docs: "阅读文档",
     },
   },
+  price: {
+    title_pre: "选择合适的",
+    title: "IM模块",
+    desc: "分模块付费，灵活搭配购买",
+    freeTable: {
+      title: "免费项目",
+      thead: ["项目", "开源协议", "费用"],
+      tbody: [
+        {
+          project: "Open-IM-Server",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+        {
+          project: "Open-IM-SDK-Flutter",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+        {
+          project: "Open-IM-SDK-uni-app",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+        {
+          project: "Open-IM-SDK-iOS",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+        {
+          project: "Open-IM-SDK-ReactNative",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+        {
+          project: "Open-IM-SDK-Android",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+        {
+          project: "Open-IM-SDK-Web",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+        },
+      ],
+    },
+    paidTables: {
+      title: "付费项目",
+      desc: "联系商务咨询价格",
+      IMTable: {
+        thead: ["IM客户端", "说明"],
+        tbody: [
+          {
+            project: "iOS原生",
+            desc: "带完整UI界面，服务端用开源的即可",
+          },
+          {
+            project: "Android原生",
+            desc: "带完整UI界面，服务端用开源的即可",
+          },
+          {
+            project: "Flutter跨端（含iOS、Android）",
+            desc: "带完整UI界面，服务端用开源的即可",
+          },
+          {
+            project:
+              "electron跨端(含Web、Windows、 Mac、Linux，国产系统如：统信、 麒麟）",
+            desc: "带完整UI界面，服务端用开源的即可",
+          },
+          {
+            project: "H5",
+            desc: "带完整UI界面，服务端用开源的即可",
+          },
+          {
+            project: "uni-app跨端（含iOS、Android）",
+            desc: "带完整UI界面，服务端用开源的即可",
+          },
+        ],
+      },
+      OtherClientTable: {
+        thead: ["其他客户端", "说明"],
+        tbody: [
+          {
+            project: "视频会议",
+            desc: "客户端带完整UI界面，需先购买音视频服务端。",
+          },
+          {
+            project: "朋友圈",
+            desc: "客户端带完整UI界面，服务端用开源的即可（PC端暂未开发）",
+          },
+        ],
+      },
+      ServiceTable: {
+        thead: ["服务端", "说明"],
+        tbody: [
+          {
+            project: "基于SFU音视频通话",
+            desc: "仅提供二进制文件，支持单人、多人音视频。支持视频会议、共享屏幕，主持人禁麦。",
+          },
+          {
+            project: "组织架构",
+            desc: "客户端带完整UI界面，支持多层级组织架构，api接口对接。",
+          },
+          {
+            project: "注册登录业务服务端",
+            desc: "短信验证码注册、邀请码机制、管理后台api。",
+          },
+          {
+            project: "加密插件",
+            desc: "消息内容传输和存储支持国密/AES算法，对称加密、用户+版本号",
+          },
+        ],
+      },
+      OtherProject: {
+        thead: ["其他项目", "说明"],
+        tbody: [
+          {
+            project: "安卓自启动保活",
+            desc: "需要手动设置自启动，显示在最顶层，后台弹出界面，锁屏显示、音视频通话弹窗、新消息提醒。",
+          },
+          {
+            project: "管理后台web端",
+            desc: "完整UI界面。包括用户管理、群组管理、注册管理、应用管理。*需购买或docker方式部署登录注册业务服务端。",
+          },
+        ],
+      },
+    },
+  },
 };
 
 export default zh;

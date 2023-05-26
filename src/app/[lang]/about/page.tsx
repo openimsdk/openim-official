@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -51,7 +51,7 @@ const About = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

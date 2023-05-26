@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { useEffect, useState } from "react"
-import { Locale } from "@/i18n-config"
-import { usePathname, useRouter } from "next/navigation"
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { Locale } from "@/i18n-config";
+import { usePathname, useRouter } from "next/navigation";
 
 const text = {
   zh: {
@@ -12,16 +12,16 @@ const text = {
     demo: "商用体验demo",
   },
   en: {},
-}
+};
 
 const FooterBar = () => {
-  const [language, setLanguage] = useState<Locale>("zh")
-  const pathname = usePathname()
-  const router = useRouter()
+  const [language, setLanguage] = useState<Locale>("zh");
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
-    setLanguage(pathname.split("/")[1] as Locale)
-  }, [pathname])
+    setLanguage(pathname.split("/")[1] as Locale);
+  }, [pathname]);
   return (
     <div>
       <footer className="footer px-[8vw] py-10 text-neutral-content ">
@@ -50,7 +50,7 @@ const FooterBar = () => {
         <a className="link-hover link text-[#006CFFFF]">蜀引1CP备2021015500号</a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FooterBar
+export default FooterBar;

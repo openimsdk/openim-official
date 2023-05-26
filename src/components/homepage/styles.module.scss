@@ -1,0 +1,39 @@
+@keyframes slide {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform: translateX(-30vw);
+  }
+}
+
+@keyframes reversed {
+  0% {
+    transform:translateX(-30vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.cell {
+  // animation: slide 36s linear infinite;
+
+  &:nth-child(1) {
+    animation: slide 36s linear infinite;
+  }
+
+  &:nth-child(3) {
+    animation: slide 72s linear infinite;
+    // animation-name: reversed;
+    // animation-delay: 12s;
+  }
+
+  &:nth-child(2) {
+    animation: reversed 36s linear infinite;
+  }
+
+  &:nth-child(4) {
+    animation: reversed 72s linear infinite;
+  }
+}

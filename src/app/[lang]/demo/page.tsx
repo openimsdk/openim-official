@@ -1,4 +1,4 @@
-import BCTabs from "@/components/demo_components/BCTabs"
+import BCTabs from "@/components/demopage/BCTabs";
 
 export default function Demo() {
   return (
@@ -14,5 +14,5 @@ export default function Demo() {
         <BCTabs></BCTabs>
       </div>
     </main>
-  )
+  );
 }

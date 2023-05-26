@@ -1,7 +1,8 @@
-import NavBar from "@/components/navbar/NavBar"
-import "./globals.scss"
+import NavBar from "@/components/navbar/NavBar";
+import "./globals.scss";
 
-import FooterBar from "@/components/footerBar/FooterBar"
+import FooterBar from "@/components/footerbar/FooterBar";
+import { Locale } from "@/i18n-config";
 
 export const metadata = {
   title: "OpenIM Official",
@@ -9,14 +10,14 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-}
+};
 
 export default function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode
-  params: { lang: string }
+  children: React.ReactNode;
+  params: { lang: Locale };
 }) {
   return (
     <html lang={params.lang}>
@@ -26,5 +27,5 @@ export default function RootLayout({
         <FooterBar />
       </body>
     </html>
-  )
+  );
 }

@@ -206,7 +206,7 @@ const NavBar = () => {
             {text[language].start}
           </Link>
         </button>
-        <div className="dropdown-hover dropdown">
+        <div className="dropdown dropdown-hover">
           <label
             tabIndex={0}
             className="btn-sm btn m-1 flex w-max flex-row bg-black text-white hover:btn-outline"

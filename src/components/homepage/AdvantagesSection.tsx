@@ -75,7 +75,6 @@ const AdvantagesSection = ({ dictionary }: { dictionary: Dictionary }) => {
         </div>
         <div className="mt-3 md:flex md:flex-1 md:flex-col md:justify-center md:py-0">
           <Image
-            // className="min-h-[464px]"
             src="/images/advantages_bg.png"
             alt="advantages_bg"
             width={2166}

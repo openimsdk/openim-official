@@ -43,9 +43,9 @@ const CodeStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
       </div>
       <div className="hidden w-full sm:pl-2 md:block md:w-1/2 md:pl-5 xl:pl-20">
         <Image
-          width={554}
-          height={400}
-          src="/images/code.png"
+          width={520}
+          height={433}
+          src="/images/code_bg.png"
           quality={100}
           alt="code"
         />

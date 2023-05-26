@@ -16,22 +16,27 @@ const text = {
       {
         name: "首页",
         href: "/zh",
+        target: undefined,
       },
       {
         name: "体验Demo",
         href: "/zh/demo",
+        target: undefined,
       },
       {
         name: "开发者中心",
-        href: "/zh/developer",
+        href: "https://doc.rentsoft.cn",
+        target: "_blank",
       },
       {
         name: "定价",
         href: "/zh/price",
+        target: undefined,
       },
       {
         name: "关于我们",
         href: "/zh/about",
+        target: undefined,
       },
     ],
   },
@@ -43,23 +48,25 @@ const text = {
       {
         name: "Home",
         href: "/en",
+        target: undefined,
       },
-      {
-        name: "Demo",
-        href: "/en/demo",
-      },
-      {
-        name: "Developer Center",
-        href: "/en/developer",
-      },
+      // {
+      //   name: "Demo",
+      //   href: "/en/demo",
+      // },
+      // {
+      //   name: "Developer Center",
+      //   href: "https://doc.rentsoft.cn",
+      // },
       {
         name: "Price",
         href: "/en/price",
+        target: undefined,
       },
-      {
-        name: "About us",
-        href: "/en/about",
-      },
+      // {
+      //   name: "About us",
+      //   href: "/en/about",
+      // },
     ],
   },
 };
@@ -115,7 +122,7 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu menu-compact mt-3 rounded-md border border-[#2c2c2c] bg-black shadow"
+            className="dropdown-content menu menu-compact -left-[8vw] mt-3 w-screen rounded-md border border-[#2c2c2c] bg-black shadow"
           >
             {text[language].navLinks.map((link) => {
               const isActive =
@@ -130,11 +137,11 @@ const NavBar = () => {
                   })}
                 >
                   <Link
-                    className={
-                      isActive
-                        ? "bg-gradient-to-br from-[#8408ff] to-[#0089ff] bg-clip-text !text-transparent"
-                        : ""
-                    }
+                    className={clsx("flex justify-center", {
+                      "bg-gradient-to-br from-[#8408ff] to-[#0089ff] bg-clip-text !text-transparent":
+                        isActive,
+                    })}
+                    target={link.target}
                     href={link.href}
                   >
                     {link.name}
@@ -148,8 +155,7 @@ const NavBar = () => {
           <Image src="/fonts/logo.png" alt="" width={25} height={25} quality={100} />
         </div>
         <Link
-          href="/"
-          locale={language}
+          href={`/${language}`}
           className="btn-ghost btn text-base normal-case sm:text-xl"
         >
           OpenIM
@@ -170,6 +176,7 @@ const NavBar = () => {
                       ? "bg-gradient-to-br from-[#8408ff] to-[#0089ff] bg-clip-text !text-transparent"
                       : ""
                   }
+                  target={link.target}
                   href={link.href}
                 >
                   {link.name}
@@ -199,7 +206,7 @@ const NavBar = () => {
             {text[language].start}
           </Link>
         </button>
-        <div className="dropdown dropdown-hover">
+        <div className="dropdown-hover dropdown">
           <label
             tabIndex={0}
             className="btn-sm btn m-1 flex w-max flex-row bg-black text-white hover:btn-outline"

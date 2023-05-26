@@ -15,7 +15,7 @@ const Price = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <p className="py-5 text-sm">分模块付费，灵活搭配购买</p>
       </div>
       <FreeSection dictionary={dictionary} />
-      <PaidSection dictionary={dictionary} />
+      <PaidSection dictionary={dictionary} isZh={lang === "zh"} />
     </div>
   );
 };

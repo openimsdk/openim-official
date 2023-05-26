@@ -5,7 +5,7 @@ import { Dictionary } from "@/dictionaries/en";
 const FeatureSection = ({ dictionary }: { dictionary: Dictionary }) => {
   return (
     <>
-      <div className="mx-[8vw] mt-20 md:mt-56 md:flex md:h-96 md:flex-row md:justify-between ">
+      <div className="mx-[8vw] mt-20 md:mt-48 md:flex md:h-96 md:flex-row md:justify-between ">
         <div className="md:relative md:order-2 md:w-7/12">
           <Image
             className=" right-0 top-0 md:absolute"

@@ -1,3 +1,4 @@
+"use client";
 import { demo } from "@/components/demopage/BCTabs";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,9 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
   const [demo, setDemo] = useState<demo>(demo_item);
 
   const handleMouseEnter = () => {
-    setDemo({ ...demo, hover: true });
+    if (demo.hover === false) {
+      setDemo({ ...demo, hover: true });
+    }
   };
 
   const handleMouseOut = () => {

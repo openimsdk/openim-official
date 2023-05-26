@@ -186,7 +186,7 @@ const BCTabs = () => {
         </button>
       </div>
       <div className="mx-[-8vw] w-[100vw]  border-b border-b-gray-500 py-1"></div>
-      <div className="flex flex-row flex-wrap items-center py-12 md:px-20">
+      <div className="flex flex-row  flex-wrap items-center justify-center py-12 sm:justify-start md:px-20">
         {demos.map((demo) => {
           return <TabsCard key={demo.label} demo_item={demo} />;
         })}

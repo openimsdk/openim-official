@@ -1,7 +1,7 @@
 const en = {
   home: {
     part1: {
-      en: "Open source,free,and universal instant messaging components",
+      en: "Open source, free, and universal instant messaging components",
       text: "",
       desc: "OpenIM includes both server-side and client-side SDKs, achieving high performance, lightweight, and easy-to-expand essential features. Developers can quickly integrate instant messaging and real-time network capabilities into their own applications by integrating OpenIM components and privatizing the deployment of servers, ensuring the security and privacy of business data.",
       btn_begin: "Start",

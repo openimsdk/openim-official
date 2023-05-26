@@ -9,10 +9,10 @@ const Price = async ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="mx-[8vw]">
       <div className="py-16 text-center">
         <div>
-          <span className="text-3xl text-white">选择合适的</span>
-          <span className="text-3xl text-[#006CFFFF]">IM模块</span>
+          <span className="text-3xl text-white">{dictionary.price.title_pre}</span>
+          <span className="text-3xl text-[#006CFFFF]">{dictionary.price.title}</span>
         </div>
-        <p className="py-5 text-sm">分模块付费，灵活搭配购买</p>
+        <p className="py-5 text-sm">{dictionary.price.desc}</p>
       </div>
       <FreeSection dictionary={dictionary} />
       <PaidSection dictionary={dictionary} />

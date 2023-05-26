@@ -1,7 +1,7 @@
 import NavBar from "@/components/navbar/NavBar";
 import "./globals.scss";
 
-import FooterBar from "@/components/footerbar/FooterBar";
+import FooterBar from "@/components/footerBar/FooterBar";
 import { Locale } from "@/i18n-config";
 
 export const metadata = {

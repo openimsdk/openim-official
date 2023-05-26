@@ -36,7 +36,7 @@ const demos: demo[] = [
     type: "mobile",
   },
   {
-    label: "Uni-app Android",
+    label: "uni-app Android",
     icon: "/fonts/uniapp_android.png",
     top_right_icon: "/fonts/qrcode.png",
     type: "mobile",

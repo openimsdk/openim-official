@@ -75,6 +75,149 @@ const en = {
       btn_docs: "Document",
     },
   },
+  price: {
+    title_pre: "Purchase the ",
+    title: "IM module you need",
+    desc: "Choose the appropriate module",
+    freeTable: {
+      title: "Free services",
+      thead: ["Project", "Open source protocol", "Cost"],
+      tbody: [
+        {
+          project: "Open-IM-Server",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+        {
+          project: "Open-IM-SDK-Flutter",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+        {
+          project: "Open-IM-SDK-uni-app",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+        {
+          project: "Open-IM-SDK-iOS",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+        {
+          project: "Open-IM-SDK-ReactNative",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+        {
+          project: "Open-IM-SDK-Android",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+        {
+          project: "Open-IM-SDK-Web",
+          protocol: "open source license",
+          price: "100% open source, free for commercial use",
+        },
+      ],
+    },
+    paidTables: {
+      title: "Fee-based services",
+      desc: "Click to contact us",
+      IMTable: {
+        thead: ["IM client", "Description"],
+        tbody: [
+          {
+            project: "Native iOS",
+            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+          },
+          {
+            project: "Native Android",
+            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+          },
+          {
+            project: "Flutter（Including iOS and Android）",
+            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+          },
+          {
+            project: "electron(Including Web, Windows、 Mac, Linux)",
+            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+          },
+          {
+            project: "H5",
+            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+          },
+          {
+            project: "uni-app（Including iOS and Android）",
+            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+          },
+        ],
+      },
+      OtherClientTable: {
+        thead: ["Other clients", "Description"],
+        tbody: [
+          {
+            project: "Video Conference",
+            desc: "With a complete UI interface, and you need to purchase an audio and video server first.",
+          },
+          {
+            project: "Moments",
+            desc: "With a complete UI interface, and the server can use open-source (not yet developed on the PC side)",
+          },
+        ],
+      },
+      ServiceTable: {
+        thead: ["Server", "Description"],
+        tbody: [
+          {
+            project: "SFU based audio and video call",
+            desc:
+              "Only binary files are provided, supporting single person and\n" +
+              "multi person audio and video. Supports video conferencing \n" +
+              "and shared screensCurtain, host banned wheat.",
+          },
+          {
+            project: "Organizational structure",
+            desc:
+              "The client comes with a complete UI interface, supporting \n" +
+              "a multi-level organizational structure, and API interface \n" +
+              "docking.",
+          },
+          {
+            project: "Register and log in to the business server",
+            desc:
+              "SMS verification code registration, invitation code mechanism, \n" +
+              "and management backend API.",
+          },
+          {
+            project: "Encryption plugin",
+            desc:
+              "Message content transmission and storage support national \n" +
+              "security/AES algorithm, symmetric encryption, user+version \n" +
+              "number",
+          },
+        ],
+      },
+      OtherProject: {
+        thead: ["Others", "Description"],
+        tbody: [
+          {
+            project: "Android auto start activation",
+            desc:
+              "Need to manually set self start, display at the top level, pop-up \n" +
+              "interface in the background, lock screen display, audio and video calls\n" +
+              "Popups, new message reminders.",
+          },
+          {
+            project: "Management Backend Web Frontend",
+            desc:
+              "Complete UI interface. Including user management, group \n" +
+              "management, registration management, and application management.*Purchase or Docker deployment is required to log in and register\n" +
+              " the business server.",
+          },
+        ],
+      },
+    },
+  },
 };
 
 export type Dictionary = typeof en;

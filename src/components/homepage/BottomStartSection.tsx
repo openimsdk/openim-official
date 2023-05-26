@@ -5,7 +5,7 @@ import React from "react";
 
 const BottomStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
   return (
-    <div className="mx-[8vw] flex flex-col items-center py-28 sm:py-40">
+    <div className="mx-[8vw] flex flex-col items-center py-20 sm:py-40">
       <div>
         <span className="text-xl text-[#006CFFFF] sm:text-2xl md:text-3xl ">
           {dictionary["home"].part9.title_pre}

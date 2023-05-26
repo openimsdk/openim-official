@@ -14,7 +14,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     <main className="overflow-x-hidden">
       <CodeStartSection dictionary={dictionary} />
 
-      <CommunitySection dictionary={dictionary} />
+      <CommunitySection dictionary={dictionary} isZh={lang === "zh"} />
 
       <FeatureSection dictionary={dictionary} />
 

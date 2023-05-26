@@ -1,10 +1,18 @@
 "use client";
 import { Dictionary } from "@/dictionaries/en";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Locale } from "@/i18n-config";
+import clsx from "clsx";
 
-const PaidSection = ({ dictionary }: { dictionary: Dictionary }) => {
+const PaidSection = ({
+  dictionary,
+  isZh,
+}: {
+  dictionary: Dictionary;
+  isZh: boolean;
+}) => {
   const { price } = dictionary;
   const pathname = usePathname();
   const language = pathname.split("/")[1] as Locale;
@@ -12,9 +20,24 @@ const PaidSection = ({ dictionary }: { dictionary: Dictionary }) => {
     <div className="my-24">
       <div className="pb-8 ">
         <span className="text-2xl text-white">{price.paidTables.title}</span>
-        <Link href={`/${language}/contact`} className="px-3 text-[#43B687FF]">
-          {price.paidTables.desc}
-        </Link>
+        <div className="dropdown-hover dropdown">
+          <Link
+            href={`/${language}/contact`}
+            className={clsx("px-3 text-[#43B687FF]", { "pointer-events-none": isZh })}
+          >
+            {price.paidTables.desc}
+          </Link>
+
+          <div className="dropdown-content menu rounded-box w-72 -translate-x-1/4 bg-base-100 p-2 shadow md:translate-x-0">
+            <Image
+              src="/images/business_chat.jpg"
+              alt=""
+              width={1187}
+              height={1669}
+              className="bg-amber-50"
+            />
+          </div>
+        </div>
       </div>
       <table className="w-full ">
         <thead>

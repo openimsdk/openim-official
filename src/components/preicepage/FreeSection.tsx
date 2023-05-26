@@ -24,7 +24,9 @@ const FreeSection = ({ dictionary }: { dictionary: Dictionary }) => {
             return (
               <tr key={tbody.project} className="text-center">
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-[#43B687FF] sm:text-base">
-                  {tbody.project}
+                  <a href={tbody.url} target="_blank" className="link">
+                    {tbody.project}
+                  </a>
                 </td>
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-[#43B687FF] sm:text-base">
                   {tbody.protocol}

@@ -2,8 +2,15 @@ import { Dictionary } from "@/dictionaries/en";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import clsx from "clsx";
 
-const CommunitySection = ({ dictionary }: { dictionary: Dictionary }) => {
+const CommunitySection = ({
+  dictionary,
+  isZh,
+}: {
+  dictionary: Dictionary;
+  isZh: boolean;
+}) => {
   return (
     <div className="relative ">
       <div className="flex flex-row justify-center">
@@ -35,49 +42,58 @@ const CommunitySection = ({ dictionary }: { dictionary: Dictionary }) => {
           </Link>
         </div>
         <div className="relative ml-3 h-12 w-40 md:h-16 md:w-48">
-          <div className="btn_polygon_border h-12 w-40 bg-[#2c2c2c] md:h-16 md:w-48"></div>
-          <Link
-            href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
-            className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-40 flex-row items-center justify-center text-sm md:h-16 md:w-48 md:text-base"
-          >
-            <Image
-              width={16}
-              height={16}
-              src="/fonts/slack.png"
-              alt="github"
-              className="mr-2 md:mr-4"
-            />
-            <p>{dictionary["home"].part2.join}</p>
-          </Link>
+          <div className="dropdown dropdown-hover">
+            <div className="btn_polygon_border h-12 w-40 bg-[#2c2c2c] md:h-16 md:w-48"></div>
+            <Link
+              href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
+              className={clsx(
+                "absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-40 flex-row items-center justify-center text-sm md:h-16 md:w-48 md:text-base",
+                { "pointer-events-none": isZh },
+              )}
+            >
+              <Image
+                width={16}
+                height={16}
+                src="/fonts/slack.png"
+                alt="github"
+                className="mr-2 md:mr-4"
+              />
+              <p>{dictionary["home"].part2.join}</p>
+            </Link>
+
+            <div className="dropdown-content menu rounded-box w-72 -translate-x-1/2 bg-base-100 p-2 shadow md:translate-x-0">
+              <Image
+                src="/images/WechatIMG20.jpeg"
+                alt=""
+                width={1187}
+                height={1669}
+                className="bg-amber-50"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="mx-[8vw] flex flex-row justify-center py-10 sm:py-20">
         <div>
-          <p className="pb-4 text-3xl font-thin sm:text-4xl">11K</p>
-          <p className="text-xs font-thin">GITHUB STARS</p>
+          <p className="pb-4 text-3xl font-thin sm:text-6xl">11.0K</p>
+          <p className="text-center text-xs font-thin">GITHUB STARS</p>
         </div>
         <div className="px-6 sm:px-20">
-          <p className="pb-4 text-3xl font-thin sm:text-4xl">0.1K</p>
-          <p className="text-xs font-thin">Slack MEMBERS</p>
+          <p className="pb-4 text-3xl font-thin sm:text-6xl">0.1K</p>
+          <p className="text-center text-xs font-thin">Slack MEMBERS</p>
         </div>
         <div>
-          <p className="pb-4 text-3xl font-thin sm:text-4xl">2.0K</p>
-          <p className="text-xs font-thin">PROJECTS</p>
+          <p className="pb-4 text-3xl font-thin sm:text-6xl">2.0K</p>
+          <p className="text-center text-xs font-thin">PROJECTS</p>
         </div>
       </div>
-      <div
-        className="absolute mx-[8vw]"
-        style={{
-          left: `${-10}vw`,
-          bottom: `${-10}vw`,
-        }}
-      >
+      <div className="absolute -bottom-[10vw] -left-[10vw] mx-[8vw] md:bottom-0">
         <Image src="/images/honeycomb.png" alt="" width={200} height={200} />
       </div>
 
       <Image
-        className="absolute -bottom-16 right-0 sm:-bottom-32"
+        className="absolute -bottom-16 right-0 sm:bottom-0"
         src="/images/arrowdown.png"
         alt=""
         width={20}

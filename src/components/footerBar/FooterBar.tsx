@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { Locale } from "@/i18n-config";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const text = {
   zh: {
@@ -15,16 +14,12 @@ const text = {
 };
 
 const FooterBar = () => {
-  const [language, setLanguage] = useState<Locale>("zh");
   const pathname = usePathname();
-  const router = useRouter();
+  const language = pathname.split("/")[1] as Locale;
 
-  useEffect(() => {
-    setLanguage(pathname.split("/")[1] as Locale);
-  }, [pathname]);
   return (
     <div>
-      <footer className="footer px-[8vw] py-10 text-neutral-content ">
+      <footer className="footer grid grid-cols-2 gap-x-4 gap-y-8 px-[8vw] py-10 text-neutral-content md:flex md:justify-between">
         <div>
           <span className="footer-title">产品</span>
           <a className="link-hover link">开源SDK</a>
@@ -46,8 +41,14 @@ const FooterBar = () => {
           <Image src="/images/contact.jpg" alt="" width={60} height={60} />
         </div>
       </footer>
-      <div className="footer-center py-20">
-        <a className="link-hover link text-[#006CFFFF]">蜀引1CP备2021015500号</a>
+      <div className="footer-center pb-6 pt-12">
+        <a
+          className="link-hover link text-sm text-[#006CFFFF]"
+          href="https://beian.miit.gov.cn/"
+          target="_blank"
+        >
+          蜀ICP备2021015500号
+        </a>
       </div>
     </div>
   );

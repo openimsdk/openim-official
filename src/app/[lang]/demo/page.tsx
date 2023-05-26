@@ -2,7 +2,7 @@ import BCTabs from "@/components/demo_components/BCTabs"
 
 export default function Demo() {
   return (
-    <main className="overflow-x-hidden bg-black">
+    <main className="overflow-x-hidden">
       <div className="mx-[8vw]">
         <div className="py-14">
           <div className="py-4 text-center">

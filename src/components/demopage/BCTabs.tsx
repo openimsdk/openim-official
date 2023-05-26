@@ -202,17 +202,18 @@ const BCTabs = () => {
             ></Image>
           </div>
           <Link
-            href="https://admin.rentsoft.cn/"
-            className=" h-10 w-28 py-3 text-center text-white md:w-36"
+            target="_blank"
+            href={`https://${active === "C" ? "admin" : "admin-tob"}.rentsoft.cn`}
+            className=" link h-10 w-28 py-3 text-center text-white md:w-36"
           >
             管理后台
           </Link>
         </div>
         <div className="mb-5">
           <p>测试账号 ：admin1</p>
-          <p className="py-2">密码 ：OpenlM888</p>
+          <p className="py-2">密码 ：OpenIM888</p>
           <p className="text-sm">
-            *防止部分人员进行恶意操作，当前预览版本限制了部分功能。如需体验完整版本，请联系OpenIM官方。
+            防止部分人员进行恶意操作，当前预览版本限制了部分功能。如需体验完整版本，请联系OpenIM官方。
           </p>
         </div>
       </div>

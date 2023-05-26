@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
@@ -12,6 +12,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
     "@heroicons/react": "^2.0.18",
+    "@prisma/client": "^4.14.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "20.1.5",
     "@types/react": "18.2.6",
@@ -40,6 +41,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.3.0"
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "prisma": "^4.14.1"
   }
 }

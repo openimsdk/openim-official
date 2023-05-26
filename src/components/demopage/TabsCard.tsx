@@ -17,8 +17,8 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
     setDemo({ ...demo, hover: false });
   };
   const IconPicker = ({ demo }: { demo: demo }) => {
-    if (typeof demo.type === undefined || demo.hover) {
-      return <></>;
+    if (typeof demo.type === undefined || demo.hover || !demo.top_right_icon) {
+      return null;
     }
     let cls = "";
     let width = 0;
@@ -47,6 +47,7 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
       if (demo.type === "pc") {
         return (
           <Link
+            target="_blank"
             href={demo.download}
             className=" h-10 w-28 py-3 text-center text-[#006CFFFF] md:w-36"
           >
@@ -60,6 +61,7 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
       }
       return (
         <Link
+          target="_blank"
           href={demo.download}
           className=" h-10 w-28 py-3 text-center text-white md:w-36"
         >

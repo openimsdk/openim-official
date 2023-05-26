@@ -11,7 +11,7 @@ const en = {
       title_pre: "Join the world-leading ",
       title: "IM open source community",
       desc: "The OpenIM developer community encompasses individual developers, start-ups, and large enterprises.",
-      github: "View Github",
+      github: "View GitHub",
       join: "Join our Slack",
     },
     part3: {

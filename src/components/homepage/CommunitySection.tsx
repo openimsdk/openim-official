@@ -61,7 +61,12 @@ const CommunitySection = ({
               <p>{dictionary["home"].part2.join}</p>
             </Link>
 
-            <div className="dropdown-content menu rounded-box w-72 -translate-x-1/2 bg-base-100 p-2 shadow md:translate-x-0">
+            <div
+              className={clsx(
+                "dropdown-content menu rounded-box w-72 -translate-x-1/2 bg-base-100 p-2 shadow md:translate-x-0",
+                { hidden: !isZh },
+              )}
+            >
               <Image
                 src="/images/WechatIMG20.jpeg"
                 alt=""

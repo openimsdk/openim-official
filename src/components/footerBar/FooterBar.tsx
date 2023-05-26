@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Locale } from "@/i18n-config";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -16,7 +15,7 @@ const text = {
     developer: {
       title: "开发者",
       document: "文档",
-      github: "github",
+      github: "GitHub",
     },
 
     company: {
@@ -58,6 +57,8 @@ const FooterBar = () => {
   const pathname = usePathname();
   const language = pathname.split("/")[1] as Locale;
 
+  const isZh = language === "zh";
+
   return (
     <div>
       <footer className="footer grid grid-cols-2 gap-x-4 gap-y-8 px-[8vw] py-10 text-neutral-content md:flex md:justify-between">
@@ -65,32 +66,50 @@ const FooterBar = () => {
           <span className="footer-title">{text[language].product.title}</span>
           <Link
             href="https://github.com/OpenIMSDK/openim-sdk-core"
+            target="_blank"
             className="link-hover link"
           >
             {text[language].product.sdk}
           </Link>
-          <a className="link-hover link">{text[language].product.demo}</a>
+          <Link
+            className="link-hover link"
+            target={isZh ? undefined : "_blank"}
+            href={
+              !isZh
+                ? "https://github.com/orgs/OpenIMSDK/repositories?q=Demo&type=all&language=&sort="
+                : `/${language}/demo`
+            }
+          >
+            {text[language].product.demo}
+          </Link>
         </div>
         <div>
           <span className="footer-title">{text[language].developer.title}</span>
-          <Link href="https://doc.rentsoft.cn/#/" className="link-hover link">
+          <Link href="https://doc.rentsoft.cn" className="link-hover link">
             {text[language].developer.document}
           </Link>
           <Link href="https://github.com/OpenIMSDK" className="link-hover link">
             {text[language].developer.github}
           </Link>
         </div>
-        <div>
-          <span className="footer-title">{text[language].company.title}</span>
-          <Link href={`/${language}/about`} className="link-hover link">
-            {text[language].company.about}
-          </Link>
-        </div>
+        {isZh && (
+          <div>
+            <span className="footer-title">{text[language].company.title}</span>
+            <Link href={`/${language}/about`} className="link-hover link">
+              {text[language].company.about}
+            </Link>
+          </div>
+        )}
         <div>
           <span className="footer-title">{text[language].contact.title}</span>
-          <p>{text[language].contact.wechat}</p>
-          <p>XiaoHong_yaokaixinya</p>
-          <Image src="/images/contact.jpg" alt="" width={60} height={60} />
+          {/* <p>{text[language].contact.wechat}</p>
+          <p>XiaoHong_yaokaixinya</p> */}
+          <Link
+            href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
+            className="link-hover link"
+          >
+            Slack
+          </Link>
         </div>
       </footer>
       <div className="footer-center pb-6 pt-12">

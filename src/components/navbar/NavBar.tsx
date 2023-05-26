@@ -75,23 +75,23 @@ const NavBar = () => {
   const pathname = usePathname();
   const language = pathname.split("/")[1] as Locale;
   // useEffect(() => {
-  //   fetch("https://api.github.com/repos/{owner}/{repo}", {
-  //     headers: {
-  //       Authorization: "token {personal_access_token}",
-  //     },
+  //   fetch("https://api.github.com/repos/OpenIMSDK/Open-IM-Server", {
+  //     // headers: {
+  //     //   Authorization: "token {personal_access_token}",
+  //     // },
   //   })
   //     .then((response) => response.json())
   //     .then((data) => {
   //       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  //       const starCount = data.stargazers_count as number
-  //       console.log(starCount)
+  //       const starCount = data.stargazers_count as number;
+  //       console.log(starCount);
   //       // 在页面上显示star数目
   //       // ...
   //     })
   //     .catch((error) => {
-  //       console.error("Error:", error)
-  //     })
-  // }, [])
+  //       console.error("Error:", error);
+  //     });
+  // }, []);
 
   const redirectedPathName = (locale: string) => {
     if (!pathname) return "/";
@@ -99,6 +99,8 @@ const NavBar = () => {
     segments[1] = locale;
     return segments.join("/");
   };
+
+  const isZh = language === "zh";
 
   return (
     <div className="navbar border-b border-[rgba(255,255,255,.2)] px-[8vw]">
@@ -196,11 +198,13 @@ const NavBar = () => {
           />
           <span className="ml-2">11k</span>
         </div>
-        <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">
-          <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">
-            {text[language].docs}
-          </Link>
-        </button>
+        {isZh && (
+          <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">
+            <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">
+              {text[language].docs}
+            </Link>
+          </button>
+        )}
         <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#006CFFFF]">
           <Link href="https://github.com/OpenIMSDK" className="text-xs font-normal">
             {text[language].start}

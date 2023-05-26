@@ -20,7 +20,7 @@ const PaidSection = ({
     <div className="my-24">
       <div className="pb-8 ">
         <span className="text-2xl text-white">{price.paidTables.title}</span>
-        <div className="dropdown-hover dropdown">
+        <div className="dropdown dropdown-hover">
           <Link
             href={`/${language}/contact`}
             className={clsx("px-3 text-[#43B687FF]", { "pointer-events-none": isZh })}
@@ -28,7 +28,12 @@ const PaidSection = ({
             {price.paidTables.desc}
           </Link>
 
-          <div className="dropdown-content menu rounded-box w-72 -translate-x-1/4 bg-base-100 p-2 shadow md:translate-x-0">
+          <div
+            className={clsx(
+              "dropdown-content menu rounded-box w-72 -translate-x-1/4 bg-base-100 p-2 shadow md:translate-x-0",
+              { hidden: !isZh },
+            )}
+          >
             <Image
               src="/images/business_chat.jpg"
               alt=""

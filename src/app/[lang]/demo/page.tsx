@@ -9,9 +9,9 @@ export default function Demo() {
             <span className="text-3xl">下载体验</span>
             <span className="text-3xl text-[#006CFFFF]">demo</span>
           </div>
-          <p className="text-center text-sm">最近更新时间：2023-5-22</p>
+          <p className="text-center text-sm">最近更新时间：今天</p>
         </div>
-        <BCTabs></BCTabs>
+        <BCTabs />
       </div>
     </main>
   );

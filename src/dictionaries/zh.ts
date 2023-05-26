@@ -11,7 +11,7 @@ const zh = {
       title_pre: "加入全球领先的",
       title: "IM开源社区",
       desc: "OpenIM的开发者社区，覆盖个人开发者、初创企业和大型企业。",
-      github: "查看github",
+      github: "查看GitHub",
       join: "加入微信社区",
     },
     part3: {

@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { usePathname, useRouter } from "next/navigation"
-import Link from "next/link"
-import Image from "next/image"
-import { ChevronDownIcon } from "@heroicons/react/20/solid"
-import { useEffect, useState } from "react"
-import type { Locale } from "@/i18n-config"
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import type { Locale } from "@/i18n-config";
+import clsx from "clsx";
 
 const text = {
   zh: {
@@ -62,17 +62,11 @@ const text = {
       },
     ],
   },
-}
+};
 
 const NavBar = () => {
-  const [language, setLanguage] = useState<Locale>("zh")
-  const pathname = usePathname()
-  const router = useRouter()
-
-  useEffect(() => {
-    setLanguage(pathname.split("/")[1] as Locale)
-  }, [pathname])
-
+  const pathname = usePathname();
+  const language = pathname.split("/")[1] as Locale;
   // useEffect(() => {
   //   fetch("https://api.github.com/repos/{owner}/{repo}", {
   //     headers: {
@@ -91,6 +85,13 @@ const NavBar = () => {
   //       console.error("Error:", error)
   //     })
   // }, [])
+
+  const redirectedPathName = (locale: string) => {
+    if (!pathname) return "/";
+    const segments = pathname.split("/");
+    segments[1] = locale;
+    return segments.join("/");
+  };
 
   return (
     <div className="navbar border-b border-[rgba(255,255,255,.2)] px-[8vw]">
@@ -114,17 +115,19 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-36 p-2 shadow"
+            className="dropdown-content menu menu-compact mt-3 rounded-md border border-[#2c2c2c] bg-black shadow"
           >
             {text[language].navLinks.map((link) => {
               const isActive =
                 link.href === `/${language}`
                   ? pathname === link.href
-                  : pathname.startsWith(link.href)
+                  : pathname.startsWith(link.href);
               return (
                 <li
                   key={link.name}
-                  className="border-b bg-black  text-sm hover:bg-gray-900"
+                  className={clsx("border-b border-[#2c2c2c] bg-black text-sm", {
+                    "bg-[#2c2c2c]": isActive,
+                  })}
                 >
                   <Link
                     className={
@@ -137,19 +140,20 @@ const NavBar = () => {
                     {link.name}
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
         <div className="mr-0.5 sm:mr-3">
           <Image src="/fonts/logo.png" alt="" width={25} height={25} quality={100} />
         </div>
-        <a
+        <Link
+          href="/"
+          locale={language}
           className="btn-ghost btn text-base normal-case sm:text-xl"
-          onClick={() => router.push("/")}
         >
           OpenIM
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex flex-row  px-1">
@@ -157,7 +161,7 @@ const NavBar = () => {
             const isActive =
               link.href === `/${language}`
                 ? pathname === link.href
-                : pathname.startsWith(link.href)
+                : pathname.startsWith(link.href);
             return (
               <li key={link.name} className="px-2 text-sm">
                 <Link
@@ -171,7 +175,7 @@ const NavBar = () => {
                   {link.name}
                 </Link>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
@@ -198,7 +202,7 @@ const NavBar = () => {
         <div className="dropdown dropdown-hover">
           <label
             tabIndex={0}
-            className="btn-sm btn m-1 flex flex-row bg-black text-white hover:btn-outline"
+            className="btn-sm btn m-1 flex w-max flex-row bg-black text-white hover:btn-outline"
           >
             <p className="text-xs font-normal">{text[language].language}</p>
             <ChevronDownIcon className="h-4 w-4 text-white"></ChevronDownIcon>
@@ -208,16 +212,16 @@ const NavBar = () => {
             className="dropdown-content menu rounded border border-[#2c2c2c] bg-black text-white shadow"
           >
             <li className="m-[2px] flex items-center text-sm hover:bg-[#2c2c2c]">
-              <Link href="/zh">中文</Link>
+              <Link href={redirectedPathName("zh")}>中文</Link>
             </li>
             <li className="m-[2px] flex items-center text-sm hover:bg-[#2c2c2c]">
-              <Link href="/en">English</Link>
+              <Link href={redirectedPathName("en")}>English</Link>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

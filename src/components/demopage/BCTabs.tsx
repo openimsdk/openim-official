@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
+import { useState } from "react";
+import Image from "next/image";
 
 type demo = {
-  label: string
-  icon: string
-  top_right_icon: string
-  type?: "pc" | "mobile"
-}
+  label: string;
+  icon: string;
+  top_right_icon: string;
+  type?: "pc" | "mobile";
+};
 
 const demos: demo[] = [
   {
@@ -76,26 +76,26 @@ const demos: demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
   },
-]
+];
 
 const BCTabs = () => {
-  const [active, setActive] = useState("C")
+  const [active, setActive] = useState("C");
 
   const IconPicker = ({ demo }: { demo: demo }) => {
     if (typeof demo.type === undefined) {
-      return <></>
+      return <></>;
     }
-    let cls = ""
-    let width = 0
-    let height = 0
+    let cls = "";
+    let width = 0;
+    let height = 0;
     if (demo.type === "pc") {
-      cls = "absolute right-2 top-2"
-      width = 10
-      height = 10
+      cls = "absolute right-2 top-2";
+      width = 10;
+      height = 10;
     } else if (demo.type === "mobile") {
-      cls = "absolute right-0 top-0"
-      width = 35
-      height = 35
+      cls = "absolute right-0 top-0";
+      width = 35;
+      height = 35;
     }
     return (
       <Image
@@ -105,15 +105,15 @@ const BCTabs = () => {
         width={width}
         height={height}
       ></Image>
-    )
-  }
+    );
+  };
 
   return (
     <div className="my-6 ">
       <div className="flex flex-row items-center justify-center">
         <button
           onClick={() => {
-            setActive("C")
+            setActive("C");
           }}
           className={
             active === "C" ? "mx-6 font-medium sm:mx-12  " : "mx-6 font-light sm:mx-12 "
@@ -130,7 +130,7 @@ const BCTabs = () => {
         </button>
         <button
           onClick={() => {
-            setActive("B")
+            setActive("B");
           }}
           className={
             active === "B" ? "mx-6 font-medium  sm:mx-12 " : " mx-6 font-light sm:mx-12"
@@ -159,7 +159,7 @@ const BCTabs = () => {
                 {demo.label}
               </p>
             </div>
-          )
+          );
         })}
       </div>
       <div className="flex flex-row items-center md:px-20">
@@ -183,7 +183,7 @@ const BCTabs = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BCTabs
+export default BCTabs;

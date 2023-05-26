@@ -1,7 +1,7 @@
 import { demo } from "@/components/demopage/BCTabs";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const TabsCard = ({ demo_item }: { demo_item: demo }) => {
   const [demo, setDemo] = useState<demo>(demo_item);

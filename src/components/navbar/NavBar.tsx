@@ -45,20 +45,12 @@ const text = {
         href: "/en",
       },
       {
-        name: "Demo",
-        href: "/en/demo",
-      },
-      {
-        name: "Developer Center",
-        href: "/en/developer",
-      },
-      {
         name: "Price",
         href: "/en/price",
       },
       {
-        name: "About us",
-        href: "/en/about",
+        name: "Contact Us",
+        href: "/en/contact",
       },
     ],
   },

@@ -22,7 +22,7 @@ const CodeStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
         </p>
         <div className="mb-6 mt-10 flex flex-row justify-center md:mt-24 md:justify-start">
           <Link
-            className="btn_polygon flex h-12 w-36 flex-row items-center justify-center bg-[#006CFFFF] md:h-16 md:w-48 md:flex-shrink-0"
+            className="btn_polygon flex h-12 w-36 flex-row items-center justify-center bg-[#006CFFFF] transition-colors hover:bg-[#008FFFFF] md:h-16 md:w-48 md:flex-shrink-0"
             href="https://github.com/OpenIMSDK"
           >
             <p>{dictionary["home"].part1.btn_begin}</p>
@@ -30,7 +30,6 @@ const CodeStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
 
           <div className="relative ml-5 h-12 w-36 md:h-16 md:w-48">
             <div className="btn_polygon_border h-12 w-36 bg-[#2c2c2c] md:h-16 md:w-48"></div>
-
             <Link
               className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-36 flex-row items-center justify-center md:h-16 md:w-48"
               href="https://doc.rentsoft.cn/"

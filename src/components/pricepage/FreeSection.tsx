@@ -31,7 +31,7 @@ const FreeSection = ({ dictionary }: { dictionary: Dictionary }) => {
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-[#43B687FF] sm:text-base">
                   {tbody.protocol}
                 </td>
-                <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
+                <td className="border border-gray-400 bg-transparent p-4 text-sm text-gray-200  sm:text-base">
                   {tbody.price}
                 </td>
               </tr>

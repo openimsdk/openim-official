@@ -205,12 +205,12 @@ const NavBar = () => {
             </Link>
           </button>
         )}
-        <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#006CFFFF]">
+        <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#008FFFFF]">
           <Link href="https://github.com/OpenIMSDK" className="text-xs font-normal">
             {text[language].start}
           </Link>
         </button>
-        <div className="dropdown-hover dropdown">
+        <div className="dropdown dropdown-hover">
           <label
             tabIndex={0}
             className="btn-sm btn m-1 flex w-max flex-row bg-black text-white hover:btn-outline"

@@ -17,7 +17,7 @@ const BottomStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
       <p className=" pt-4 text-xs sm:text-lg">{dictionary["home"].part9.desc}</p>
       <div className="mb-6 mt-10 flex flex-row md:mt-24">
         <Link
-          className="btn_polygon flex h-12 w-36 flex-row  items-center justify-center bg-[#006CFFFF] md:h-16 md:w-48 md:flex-shrink-0"
+          className="btn_polygon flex h-12 w-36 flex-row items-center justify-center  bg-[#006CFFFF] transition-colors hover:bg-[#008FFFFF] md:h-16 md:w-48 md:flex-shrink-0"
           href="https://github.com/OpenIMSDK"
         >
           <p>{dictionary["home"].part9.btn_begin}</p>

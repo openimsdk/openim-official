@@ -1,7 +1,7 @@
-import FreeSection from "@/components/preicepage/FreeSection";
+import FreeSection from "@/components/pricepage/FreeSection";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
-import PaidSection from "@/components/preicepage/PaidSection";
+import PaidSection from "@/components/pricepage/PaidSection";
 
 const Price = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang);

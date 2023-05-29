@@ -66,7 +66,7 @@ const PaidSection = ({
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
                   {tbody.project}
                 </td>
-                <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
+                <td className="border border-gray-400 bg-transparent p-4 text-sm text-gray-200 sm:text-base">
                   {tbody.desc}
                 </td>
               </tr>
@@ -96,7 +96,7 @@ const PaidSection = ({
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
                   {tbody.project}
                 </td>
-                <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
+                <td className="border border-gray-400 bg-transparent p-4 text-sm text-gray-200 sm:text-base">
                   {tbody.desc}
                 </td>
               </tr>
@@ -126,7 +126,7 @@ const PaidSection = ({
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
                   {tbody.project}
                 </td>
-                <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
+                <td className="border border-gray-400 bg-transparent p-4 text-sm text-gray-200 sm:text-base">
                   {tbody.desc}
                 </td>
               </tr>
@@ -156,7 +156,7 @@ const PaidSection = ({
                 <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
                   {tbody.project}
                 </td>
-                <td className="border border-gray-400 bg-transparent p-4 text-sm text-white sm:text-base">
+                <td className="border border-gray-400 bg-transparent p-4 text-sm text-gray-200  sm:text-base">
                   {tbody.desc}
                 </td>
               </tr>

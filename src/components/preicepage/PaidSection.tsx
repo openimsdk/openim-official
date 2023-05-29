@@ -20,7 +20,7 @@ const PaidSection = ({
     <div className="my-24">
       <div className="pb-8 ">
         <span className="text-2xl text-white">{price.paidTables.title}</span>
-        <div className="dropdown dropdown-hover">
+        <div className="dropdown-hover dropdown">
           <Link
             href={`/${language}/contact`}
             className={clsx("px-3 text-[#43B687FF]", { "pointer-events-none": isZh })}

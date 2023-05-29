@@ -2,7 +2,7 @@ import NavBar from "@/components/navbar/NavBar";
 import "./globals.scss";
 
 import { Locale } from "@/i18n-config";
-import FooterBar from "@/components/footerbar/FooterBar";
+import FooterBar from "@/components/footerBar/FooterBar";
 
 export const metadata = {
   title: "OpenIM Official",

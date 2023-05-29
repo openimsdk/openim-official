@@ -42,7 +42,7 @@ const CommunitySection = ({
           </Link>
         </div>
         <div className="relative ml-3 h-12 w-40 md:h-16 md:w-48">
-          <div className="dropdown dropdown-hover">
+          <div className="dropdown-hover dropdown">
             <div className="btn_polygon_border h-12 w-40 bg-[#2c2c2c] md:h-16 md:w-48"></div>
             <Link
               href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
@@ -68,10 +68,11 @@ const CommunitySection = ({
               )}
             >
               <Image
-                src="/images/WechatIMG20.jpeg"
+                src="https://s2.loli.net/2023/05/29/CZv8WirHy1LMaJD.jpg"
                 alt=""
-                width={1187}
+                width={2187}
                 height={1669}
+                quality={100}
                 className="bg-amber-50"
               />
             </div>
@@ -85,7 +86,7 @@ const CommunitySection = ({
           <p className="text-center text-xs font-thin">GITHUB STARS</p>
         </div>
         <div className="px-6 sm:px-20">
-          <p className="pb-4 text-3xl font-thin sm:text-6xl">0.1K</p>
+          <p className="pb-4 text-3xl font-thin sm:text-6xl">10.0K</p>
           <p className="text-center text-xs font-thin">Slack MEMBERS</p>
         </div>
         <div>

@@ -38,7 +38,7 @@ const text = {
     developer: {
       title: "Developers",
       document: "Documentation",
-      github: "Github",
+      github: "GitHub",
     },
 
     company: {

@@ -80,8 +80,8 @@ const en = {
     title: "IM module you need",
     desc: "Choose the appropriate module",
     freeTable: {
-      title: "Free services",
-      thead: ["Project", "Open source protocol", "Cost"],
+      title: "Free Services",
+      thead: ["Project", "Open source license", "Cost"],
       tbody: [
         {
           project: "Open-IM-Server",
@@ -128,7 +128,7 @@ const en = {
       ],
     },
     paidTables: {
-      title: "Fee-based services",
+      title: "Fee-based Services",
       desc: "Click to contact us",
       IMTable: {
         thead: ["IM client", "Description"],

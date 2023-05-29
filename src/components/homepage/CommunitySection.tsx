@@ -42,7 +42,7 @@ const CommunitySection = ({
           </Link>
         </div>
         <div className="relative ml-3 h-12 w-40 md:h-16 md:w-48">
-          <div className="dropdown-hover dropdown">
+          <div className=" dropdown dropdown-hover">
             <div className="btn_polygon_border h-12 w-40 bg-[#2c2c2c] md:h-16 md:w-48"></div>
             <Link
               href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"

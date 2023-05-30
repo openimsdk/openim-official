@@ -3,13 +3,13 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 's2.loli.net',
-        port: '',
-        pathname: '/2023/05/29/**',
+        protocol: "https",
+        hostname: "openim-1253691595.cos.ap-nanjing.myqcloud.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

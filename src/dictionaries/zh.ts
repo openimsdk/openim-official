@@ -13,6 +13,9 @@ const zh = {
       desc: "OpenIM的开发者社区，覆盖个人开发者、初创企业和大型企业。",
       github: "查看GitHub",
       join: "加入微信社区",
+      github_stars:"GITHUB STARS",
+      slack_members:"微信社群",
+      projects:"项目"
     },
     part3: {
       title_pre: "支持多种",

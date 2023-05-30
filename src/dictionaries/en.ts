@@ -13,6 +13,9 @@ const en = {
       desc: "The OpenIM developer community encompasses individual developers, start-ups, and large enterprises.",
       github: "View GitHub",
       join: "Join our Slack",
+      github_stars:"GITHUB STARS",
+      slack_members:"SLACK MEMBERS",
+      projects:"PROJECTS"
     },
     part3: {
       title_pre: "Supports multiple message ",

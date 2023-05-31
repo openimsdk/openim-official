@@ -102,14 +102,21 @@ const FooterBar = () => {
         )}
         <div>
           <span className="footer-title">{text[language].contact.title}</span>
-          {/* <p>{text[language].contact.wechat}</p>
-          <p>XiaoHong_yaokaixinya</p> */}
-          <Link
-            href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
-            className="link-hover link"
-          >
-            Slack
-          </Link>
+          {isZh && (
+            <>
+              <p>{text[language].contact.wechat}</p>
+              <p>XiaoHong_yaokaixinya</p>
+            </>
+          )}
+
+          {!isZh && (
+            <Link
+              href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
+              className="link-hover link"
+            >
+              Slack
+            </Link>
+          )}
         </div>
       </footer>
       <div className="footer-center pb-6 pt-12">

@@ -189,7 +189,10 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="flex-1 justify-end">
-        <div className="hidden md:flex md:flex-row md:items-center md:pr-8">
+        <Link
+          className="hidden md:mr-8 md:flex md:flex-row md:items-center"
+          href="https://github.com/OpenIMSDK/"
+        >
           <Image
             width={16}
             height={16}
@@ -197,7 +200,7 @@ const NavBar = () => {
             alt="github"
           />
           <span className="ml-2">11k</span>
-        </div>
+        </Link>
         {isZh && (
           <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">
             <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">

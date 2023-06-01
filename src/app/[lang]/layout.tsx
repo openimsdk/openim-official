@@ -20,7 +20,7 @@ export default function RootLayout({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} data-theme="light">
       <body>
         <NavBar />
         {children}

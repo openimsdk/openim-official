@@ -105,7 +105,7 @@ const FooterBar = () => {
           {isZh && (
             <>
               <p>{text[language].contact.wechat}</p>
-              <p>XiaoHong_yaokaixinya</p>
+              <p>OpenIM-RTC</p>
             </>
           )}
 

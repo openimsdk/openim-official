@@ -25,7 +25,7 @@ const text = {
       },
       {
         name: "开发者中心",
-        href: "https://doc.rentsoft.cn",
+        href: "https://test-admin.rentsoft.cn",
         target: "_blank",
       },
       {
@@ -56,7 +56,7 @@ const text = {
       // },
       // {
       //   name: "Developer Center",
-      //   href: "https://doc.rentsoft.cn",
+      //   href: "https://test-admin.rentsoft.cn",
       // },
       {
         name: "Price",
@@ -203,7 +203,7 @@ const NavBar = () => {
         </Link>
         {isZh && (
           <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">
-            <Link href="https://doc.rentsoft.cn" className="text-xs font-normal">
+            <Link href="https://test-admin.rentsoft.cn" className="text-xs font-normal">
               {text[language].docs}
             </Link>
           </button>

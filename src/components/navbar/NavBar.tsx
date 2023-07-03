@@ -213,6 +213,7 @@ const NavBar = () => {
             {text[language].start}
           </Link>
         </button>
+        {/* eslint-disable-next-line */}
         <div className="dropdown dropdown-hover">
           <label
             tabIndex={0}

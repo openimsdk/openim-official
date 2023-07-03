@@ -29,8 +29,8 @@ export function middleware(request: NextRequest) {
   );
 
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request);
-    return NextResponse.redirect(new URL(`/${locale!}/${pathname}`, request.url));
+    const locale = getLocale(request) || "en";
+    return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url));
   }
 }
 

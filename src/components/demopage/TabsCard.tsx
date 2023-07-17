@@ -56,7 +56,13 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
         );
       } else if (demo.type === "mobile") {
         return (
-          <p className=" h-10 w-28 py-3 text-center text-white md:w-36">扫码下载</p>
+          <Link
+            target="_blank"
+            href={demo.download}
+            className=" h-10 w-28 py-3 text-center text-[#fff] md:w-36"
+          >
+            扫码或点击下载
+          </Link>
         );
       }
       return (

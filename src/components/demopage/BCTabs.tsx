@@ -22,95 +22,93 @@ const demos_C: demo[] = [
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/flutter_android_qrcode.png",
     hover: false,
-    download:
-      "https://cos.pgyer.com/d5c500f6e499f9d3d3c354e2de3edf27.apk?sign=17e07711d1052d4657dba31b2590936d&t=1685087777&response-content-disposition=attachment%3Bfilename%3DOpenIM_2.4.35.apk",
+    download: "https://www.pgyer.com/openim_flutter_c_base_open",
     type: "mobile",
   },
-  {
-    label: "Flutter IOS",
-    icon: "/fonts/flutter_ios.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "/fonts/flutter_ios_qrcode.png",
-    hover: false,
-    download: "https://testflight.apple.com/join/o956rTGx",
-    type: "mobile",
-  },
+  // {
+  //   label: "Flutter IOS",
+  //   icon: "/fonts/flutter_ios.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "/fonts/flutter_ios_qrcode.png",
+  //   hover: false,
+  //   download: "https://testflight.apple.com/join/o956rTGx",
+  //   type: "mobile",
+  // },
   {
     label: "Native Android",
     icon: "/fonts/native_android.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/native_android_qrcode.png",
     hover: false,
-    download:
-      "https://cos.pgyer.com/191d4cb17e4d2430281971c6e8eee6f9.apk?sign=82dd921e768546600150dbd68b1a8430&t=1685088525&response-content-disposition=attachment%3Bfilename%3DOpenIM_1.2.5.apk",
+    download: "https://www.pgyer.com/HRabmr",
     type: "mobile",
   },
-  {
-    label: "Native IOS",
-    icon: "/fonts/native_ios.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "/fonts/native_ios_qrcode.png",
-    hover: false,
-    download: "https://testflight.apple.com/join/79cQqBYd",
-    type: "mobile",
-  },
-  {
-    label: "uni-app Android",
-    icon: "/fonts/uniapp_android.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "/fonts/uniapp_android_qrcode.png",
-    hover: false,
-    download:
-      "https://cos.pgyer.com/f364b6e603111f0cb7f0361857c56983.apk?sign=e20fa05deaec51e3a93833e39c97be64&t=1685088695&response-content-disposition=attachment%3Bfilename%3DOpenIM-Uniapp_1.0.6.apk",
-    type: "mobile",
-  },
-  {
-    label: "Pc Web ToC",
-    icon: "/fonts/pc_web_toc.png",
-    top_right_icon: "",
-    hover: false,
-    download: "https://web.rentsoft.cn/",
-  },
-  {
-    label: "Electron for Mac",
-    icon: "/fonts/electron_for_mac.png",
-    top_right_icon: "/fonts/download.png",
-    type: "pc",
-    hover: false,
-    download: "https://storage.rentsoft.cn/app/OpenIM-1.1.9-mac.zip",
-  },
-  {
-    label: "Electron for Windows",
-    icon: "/fonts/electron_for_windows.png",
-    top_right_icon: "/fonts/download.png",
-    type: "pc",
-    hover: false,
-    download: "https://storage.rentsoft.cn/app/OpenIM%20Setup%201.1.9.exe",
-  },
-  {
-    label: "Electron for Linux",
-    icon: "/fonts/electron_for_linux.png",
-    top_right_icon: "/fonts/download.png",
-    type: "pc",
-    hover: false,
-    download: "https://storage-online.rentsoft.cn/app/OpenIM_1.0.1_amd64.deb",
-  },
-  {
-    label: "Electron for UOS",
-    icon: "/fonts/electron_for_uos.png",
-    top_right_icon: "/fonts/download.png",
-    type: "pc",
-    hover: false,
-    download: "https://storage-online.rentsoft.cn/app/OpenIM_1.0.1_arm64.deb",
-  },
-  {
-    label: "Electron for Kylinos(银河麒麟)",
-    icon: "/fonts/electron_for_kylinos.png",
-    top_right_icon: "/fonts/download.png",
-    type: "pc",
-    hover: false,
-    download: "https://storage-online.rentsoft.cn/app/OpenIM_1.0.1_arm64_kylinos.deb",
-  },
+  // {
+  //   label: "Native IOS",
+  //   icon: "/fonts/native_ios.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "/fonts/native_ios_qrcode.png",
+  //   hover: false,
+  //   download: "https://testflight.apple.com/join/79cQqBYd",
+  //   type: "mobile",
+  // },
+  // {
+  //   label: "uni-app Android",
+  //   icon: "/fonts/uniapp_android.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "/fonts/uniapp_android_qrcode.png",
+  //   hover: false,
+  //   download:
+  //     "https://cos.pgyer.com/f364b6e603111f0cb7f0361857c56983.apk?sign=e20fa05deaec51e3a93833e39c97be64&t=1685088695&response-content-disposition=attachment%3Bfilename%3DOpenIM-Uniapp_1.0.6.apk",
+  //   type: "mobile",
+  // },
+  // {
+  //   label: "Pc Web ToC",
+  //   icon: "/fonts/pc_web_toc.png",
+  //   top_right_icon: "",
+  //   hover: false,
+  //   download: "https://web.rentsoft.cn/",
+  // },
+  // {
+  //   label: "Electron for Mac",
+  //   icon: "/fonts/electron_for_mac.png",
+  //   top_right_icon: "/fonts/download.png",
+  //   type: "pc",
+  //   hover: false,
+  //   download: "https://storage.rentsoft.cn/app/OpenIM-1.1.9-mac.zip",
+  // },
+  // {
+  //   label: "Electron for Windows",
+  //   icon: "/fonts/electron_for_windows.png",
+  //   top_right_icon: "/fonts/download.png",
+  //   type: "pc",
+  //   hover: false,
+  //   download: "https://storage.rentsoft.cn/app/OpenIM%20Setup%201.1.9.exe",
+  // },
+  // {
+  //   label: "Electron for Linux",
+  //   icon: "/fonts/electron_for_linux.png",
+  //   top_right_icon: "/fonts/download.png",
+  //   type: "pc",
+  //   hover: false,
+  //   download: "https://storage-online.rentsoft.cn/app/OpenIM_1.0.1_amd64.deb",
+  // },
+  // {
+  //   label: "Electron for UOS",
+  //   icon: "/fonts/electron_for_uos.png",
+  //   top_right_icon: "/fonts/download.png",
+  //   type: "pc",
+  //   hover: false,
+  //   download: "https://storage-online.rentsoft.cn/app/OpenIM_1.0.1_arm64.deb",
+  // },
+  // {
+  //   label: "Electron for Kylinos(银河麒麟)",
+  //   icon: "/fonts/electron_for_kylinos.png",
+  //   top_right_icon: "/fonts/download.png",
+  //   type: "pc",
+  //   hover: false,
+  //   download: "https://storage-online.rentsoft.cn/app/OpenIM_1.0.1_arm64_kylinos.deb",
+  // },
 ];
 const demos_B: demo[] = [
   {
@@ -166,7 +164,7 @@ const BCTabs = () => {
             }
           ></div>
         </button>
-        <button
+        {/* <button
           onClick={() => {
             setActive("B");
             setDemos(demos_B);
@@ -183,7 +181,7 @@ const BCTabs = () => {
                 : "mx-auto w-8 py-1"
             }
           ></div>
-        </button>
+        </button> */}
       </div>
       <div className="mx-[-8vw] w-[100vw]  border-b border-b-gray-500 py-1"></div>
       <div className="flex flex-row  flex-wrap items-center justify-center py-12 sm:justify-start md:px-20">
@@ -192,7 +190,8 @@ const BCTabs = () => {
         })}
       </div>
       <div className="flex flex-row items-center md:px-20">
-        <div className="mx-4 my-6 flex flex-col md:mx-8">
+        <div className="ml-6">更多版本正在逐步更新v3.0 敬请期待...</div>
+        {/* <div className="mx-4 my-6 flex flex-col md:mx-8">
           <div className="relative flex h-28 w-28 items-center justify-center rounded bg-[#1a2239] md:h-36 md:w-36 ">
             <Image
               src="/fonts/manage.png"
@@ -215,7 +214,7 @@ const BCTabs = () => {
           <p className="text-sm">
             防止部分人员进行恶意操作，当前预览版本限制了部分功能。如需体验完整版本，请联系OpenIM官方。
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

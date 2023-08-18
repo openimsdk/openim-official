@@ -1,11 +1,11 @@
 "use client";
-import { demo } from "@/components/demopage/BCTabs";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Demo } from "./BCTabs";
 
-const TabsCard = ({ demo_item }: { demo_item: demo }) => {
-  const [demo, setDemo] = useState<demo>(demo_item);
+const TabsCard = ({ demo_item }: { demo_item: Demo }) => {
+  const [demo, setDemo] = useState<Demo>(demo_item);
 
   const handleMouseEnter = () => {
     if (demo.hover === false) {
@@ -16,7 +16,7 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
   const handleMouseOut = () => {
     setDemo({ ...demo, hover: false });
   };
-  const IconPicker = ({ demo }: { demo: demo }) => {
+  const IconPicker = ({ demo }: { demo: Demo }) => {
     if (typeof demo.type === undefined || demo.hover || !demo.top_right_icon) {
       return null;
     }
@@ -42,7 +42,7 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
       ></Image>
     );
   };
-  const DownloadText = ({ demo }: { demo: demo }) => {
+  const DownloadText = ({ demo }: { demo: Demo }) => {
     if (demo.hover) {
       if (demo.type === "pc") {
         return (
@@ -80,7 +80,7 @@ const TabsCard = ({ demo_item }: { demo_item: demo }) => {
     );
   };
 
-  const ImageShow = ({ demo }: { demo: demo }) => {
+  const ImageShow = ({ demo }: { demo: Demo }) => {
     if (demo.hover) {
       if (demo.type === "pc") {
         return (

@@ -4,20 +4,20 @@ import Link from "next/link";
 import { useState } from "react";
 import { Demo } from "./BCTabs";
 
-const TabsCard = ({ demo_item }: { demo_item: Demo }) => {
-  const [demo, setDemo] = useState<Demo>(demo_item);
+const TabsCard = ({ demo_item: demo }: { demo_item: Demo }) => {
+  const [hover, setHover] = useState(false);
 
   const handleMouseEnter = () => {
-    if (demo.hover === false) {
-      setDemo({ ...demo, hover: true });
+    if (hover === false) {
+      setHover(true);
     }
   };
 
   const handleMouseOut = () => {
-    setDemo({ ...demo, hover: false });
+    setHover(false);
   };
   const IconPicker = ({ demo }: { demo: Demo }) => {
-    if (typeof demo.type === undefined || demo.hover || !demo.top_right_icon) {
+    if (typeof demo.type === undefined || hover || !demo.top_right_icon) {
       return null;
     }
     let cls = "";
@@ -43,7 +43,7 @@ const TabsCard = ({ demo_item }: { demo_item: Demo }) => {
     );
   };
   const DownloadText = ({ demo }: { demo: Demo }) => {
-    if (demo.hover) {
+    if (hover) {
       if (demo.type === "pc") {
         return (
           <Link
@@ -81,7 +81,7 @@ const TabsCard = ({ demo_item }: { demo_item: Demo }) => {
   };
 
   const ImageShow = ({ demo }: { demo: Demo }) => {
-    if (demo.hover) {
+    if (hover) {
       if (demo.type === "pc") {
         return (
           <Image

@@ -12,7 +12,7 @@ export const tob_base_open: Demo[] = [
   },
   {
     label: "Flutter IOS",
-    icon: "/fonts/flutter_ios.png",
+    icon: "/fonts/native_ios.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/flutter_ios_qrcode_b.png",
     hover: false,
@@ -39,7 +39,7 @@ export const tob_base_open: Demo[] = [
   },
   //   {
   //     label: "uni-app Android",
-  //     icon: "/fonts/uniapp_android.png",
+  //     icon: "/fonts/native_android.png",
   //     top_right_icon: "/fonts/qrcode.png",
   //     qrcode: "/fonts/uniapp_android_qrcode.png",
   //     hover: false,
@@ -110,7 +110,7 @@ export const tob_enterprise: Demo[] = [
   },
   {
     label: "Flutter IOS",
-    icon: "/fonts/flutter_ios.png",
+    icon: "/fonts/native_ios.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/flutter_ios_qrcode_b_e.png",
     hover: false,
@@ -137,7 +137,7 @@ export const tob_enterprise: Demo[] = [
   },
   // {
   //   label: "uni-app Android",
-  //   icon: "/fonts/uniapp_android.png",
+  //   icon: "/fonts/native_android.png",
   //   top_right_icon: "/fonts/qrcode.png",
   //   qrcode: "/fonts/uniapp_android_qrcode.png",
   //   hover: false,

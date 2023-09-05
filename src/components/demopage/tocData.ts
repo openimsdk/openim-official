@@ -12,7 +12,7 @@ export const toc_base_open: Demo[] = [
   },
   {
     label: "Flutter IOS",
-    icon: "/fonts/flutter_ios.png",
+    icon: "/fonts/native_ios.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/flutter_ios_qrcode.png",
     hover: false,
@@ -39,7 +39,7 @@ export const toc_base_open: Demo[] = [
   },
   {
     label: "uni-app Android",
-    icon: "/fonts/uniapp_android.png",
+    icon: "/fonts/native_android.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/uniapp_android_qrcode.png",
     hover: false,
@@ -59,7 +59,7 @@ export const toc_base_open: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB-1.0.0.dmg",
+    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB-3.2.1.dmg",
   },
   {
     label: "Electron for Mac M1",
@@ -68,7 +68,7 @@ export const toc_base_open: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB-1.0.0-arm64.dmg",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB-3.2.1-arm64.dmg",
   },
   {
     label: "Electron for Windows",
@@ -77,7 +77,7 @@ export const toc_base_open: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB%20Setup%201.0.0.exe",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB%20Setup%203.2.1.exe",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos",
@@ -86,7 +86,7 @@ export const toc_base_open: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB_1.0.0_amd64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB_3.2.1_amd64.deb",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos arm64",
@@ -95,7 +95,7 @@ export const toc_base_open: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB_1.0.0_arm64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CB_3.2.1_arm64.deb",
   },
 ];
 export const toc_enterprise: Demo[] = [
@@ -110,7 +110,7 @@ export const toc_enterprise: Demo[] = [
   },
   {
     label: "Flutter IOS",
-    icon: "/fonts/flutter_ios.png",
+    icon: "/fonts/native_ios.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "/fonts/flutter_ios_qrcode_c_e.png",
     hover: false,
@@ -137,7 +137,7 @@ export const toc_enterprise: Demo[] = [
   },
   // {
   //   label: "uni-app Android",
-  //   icon: "/fonts/uniapp_android.png",
+  //   icon: "/fonts/native_android.png",
   //   top_right_icon: "/fonts/qrcode.png",
   //   qrcode: "/fonts/uniapp_android_qrcode.png",
   //   hover: false,
@@ -157,7 +157,7 @@ export const toc_enterprise: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-1.0.0.dmg",
+    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-3.2.1.dmg",
   },
   {
     label: "Electron for Mac M1",
@@ -166,7 +166,7 @@ export const toc_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-1.0.0-arm64.dmg",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-3.2.1-arm64.dmg",
   },
   {
     label: "Electron for Windows",
@@ -175,7 +175,7 @@ export const toc_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER%20Setup%201.0.0.exe",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER%20Setup%203.2.1.exe",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos",
@@ -184,7 +184,7 @@ export const toc_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER_1.0.0_amd64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER_3.2.1_amd64.deb",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos arm64",
@@ -193,6 +193,6 @@ export const toc_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER_1.0.0_arm64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER_3.2.1_arm64.deb",
   },
 ];

@@ -41,9 +41,9 @@ export const toc_base_open: Demo[] = [
     label: "uni-app Android",
     icon: "/fonts/native_android.png",
     top_right_icon: "/fonts/qrcode.png",
-    qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM_Uniapp",
+    qrcode: "https://www.xcxwo.com/app/qrcode/IM-UCER",
     hover: false,
-    download: "https://www.xcxwo.com/OpenIM_Uniapp",
+    download: "https://www.xcxwo.com/IM-UCER",
     type: "mobile",
   },
   {
@@ -139,9 +139,9 @@ export const toc_enterprise: Demo[] = [
     label: "uni-app Android",
     icon: "/fonts/native_android.png",
     top_right_icon: "/fonts/qrcode.png",
-    qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM_Uniapp",
+    qrcode: "https://www.xcxwo.com/app/qrcode/IM-UCB",
     hover: false,
-    download: "https://www.xcxwo.com/OpenIM_Uniapp",
+    download: "https://www.xcxwo.com/IM-UCB",
     type: "mobile",
   },
   {

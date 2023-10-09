@@ -25,24 +25,24 @@ export type Demo = {
 const renderList: DemoSource[][] = [
   [
     {
-      label: "基础版本",
-      demos: toc_base_open,
-    },
-    {
       label: "高级版",
       subLabel: "（含音视频）",
       demos: toc_enterprise,
     },
-  ],
-  [
     {
       label: "基础版本",
-      demos: tob_base_open,
+      demos: toc_base_open,
     },
+  ],
+  [
     {
       label: "高级版",
       subLabel: "（含音视频）",
       demos: tob_enterprise,
+    },
+    {
+      label: "基础版本",
+      demos: tob_base_open,
     },
   ],
 ];

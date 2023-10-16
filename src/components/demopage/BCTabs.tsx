@@ -29,10 +29,10 @@ const renderList: DemoSource[][] = [
       subLabel: "（含音视频）",
       demos: toc_enterprise,
     },
-    {
-      label: "基础版本",
-      demos: toc_base_open,
-    },
+    // {
+    //   label: "基础版本",
+    //   demos: toc_base_open,
+    // },
   ],
   [
     {
@@ -69,7 +69,7 @@ const BCTabs = () => {
             }
           ></div>
         </button>
-        <button
+        {/* <button
           onClick={() => setActive(1)}
           className={
             active === 1 ? "mx-6 font-medium sm:mx-12 " : " mx-6 font-light sm:mx-12"
@@ -83,7 +83,7 @@ const BCTabs = () => {
                 : "mx-auto w-8 py-1"
             }
           ></div>
-        </button>
+        </button> */}
       </div>
       {renderData.map((data, idx) => (
         <div key={idx}>

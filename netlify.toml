@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build;npm run start"
+  publish = ".next"
+
+# [[redirects]]
+#   from = "/*"
+#   to = "/en/:splat"
+#   status = 200
+#   force = true
+
+[dev]
+  command = "npm run dev"

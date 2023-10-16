@@ -5,6 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This repository contains the code for the official website of OpenIM, an open-source SDK for Instant Messaging.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be86aad5-e33f-48c8-8a92-ab90b1fbd664/deploy-status)](https://app.netlify.com/sites/openim-official/deploys)
+
 ## Development
 
 - Clone the repository: `git clone https://github.com/openimsdk/openim-official`

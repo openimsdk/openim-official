@@ -1,177 +1,200 @@
 const en = {
   home: {
     part1: {
-      en: "Open source, free, and universal instant messaging components",
-      text: "",
-      desc: "OpenIM includes both server-side and client-side SDKs, achieving high performance, lightweight, and easy-to-expand essential features. Developers can quickly integrate instant messaging and real-time network capabilities into their own applications by integrating OpenIM components and privatizing the deployment of servers, ensuring the security and privacy of business data.",
-      btn_begin: "Start",
-      btn_docs: "Document",
+      en: "Open source SDK for Instant Messaging",
+      text: "Open source, free, universal instant messaging component",
+      desc: "OpenIM includes server and client SDKs, realizing important features like high performance, lightweight, and extensibility. Developers can integrate instant messaging and real-time networking capabilities into their own apps quickly by integrating the OpenIM SDK and deploying the server privately, ensuring the security and privacy of business data.",
+      btn_begin: "Start Experience",
+      btn_docs: "Read Documentation",
     },
     part2: {
-      title_pre: "Join the world-leading ",
-      title: "IM open source community",
-      desc: "The OpenIM developer community encompasses individual developers, start-ups, and large enterprises.",
-      github: "View GitHub",
-      join: "Join our Slack",
-      github_stars:"GITHUB STARS",
-      slack_members:"SLACK MEMBERS",
-      projects:"PROJECTS"
+      title_pre: "Join the world-leading",
+      title: "IM open-source community",
+      desc: "OpenIM developer community covers individual developers, startups, and large enterprises.",
+      github: "View on GitHub",
+      join: "Join WeChat Community",
+      github_stars: "GITHUB STARS",
+      slack_members: "WeChat Groups",
+      projects: "Projects",
     },
     part3: {
-      title_pre: "Supports multiple message ",
-      title: "types",
+      title_pre: "Supports a variety of",
+      title: "message types",
       img: "/images/message_en.png",
-      desc: "Supports almost all types of messages such as text, images, emoticons, voice, video, geographical location, files, quotes, business cards, system notifications, customizations, and more. Supports both one-to-one and multi-person audio and video calls. Terminal platform support for iOS, Android, Flutter, uni-app, ReactNative, Electron, Web, H5",
+      desc: "Supports almost all message types, including text, images, emojis, voice, video, geolocation, files, quotations, business cards, system notifications, and custom messages. Supports single and multi-person audio and video calls. Supported on iOS, Android, Flutter, uni-app, ReactNative, Electron, Web, H5.",
     },
     part4: {
-      title_pre: "Efficient meetings ",
+      title_pre: "Efficient meetings",
       title: "anytime, anywhere",
       img: "/images/meeting_en.png",
-      desc: "Based on the 100% reliable mandatory signaling capability of IM (Instant Messaging), it paves the way for the IM system and deeply integrates with chat applications. A single meeting supports simultaneous video for hundreds, subscription for thousands, and server-side audio and video recording.",
+      desc: "100% reliable signaling ability based on IM connects the IM system, deeply integrating with chat applications. Single meeting supports simultaneous video of hundreds of people and thousands of subscribers, server-side audio and video recording.",
     },
     part5: {
-      title_pre: "One-to-one and group chats cater to various social scenarios ",
-      title: "meet various social scenarios",
+      title_pre: "Single and group chats cater to all kinds of",
+      title: "social scenarios",
       img: "/images/social_en.png",
-      desc: "There are four roles: App administrator, group owner, group manager, and general member. Powerful group functions such as mute, group announcements, group verification, unlimited group members, on-demand loading of group messages, and more.",
+      desc: "App administrators, group owners, group administrators, and regular members. Features like mute, group announcements, group verification, unlimited group members, and on-demand group message loading.",
     },
     part6: {
-      title_pre: "Special features ",
-      title: "function",
+      title_pre: "Special",
+      title: "Features",
       img: "/images/feature_en.png",
-      desc: "Supports read-and-burn private chats with customizable duration. The message editing function broadens social scenarios, making instant messaging more diverse and interesting.",
+      desc: "Supports custom duration of read-and-burn confidential chats. Message editing feature broadens social scenarios, making instant messaging more diverse and interesting.",
     },
     part7: {
-      title_pre: "The advantages of ",
+      title_pre: "Advantages of",
       title: "OpenIM",
       sub_title:
-        "Open source, free, and universal instant messaging components. One click deployment, easy integration.",
+        "Open source, free, universal instant messaging component. One-click deployment, easy integration.",
       t1: {
         title: "Open Source",
-        desc: "The core code is open source, and the data is self-controlled, aiming to build the world's leading IM open source community, including both the client SDK and the server.",
+        desc: "Core code is open source, data is self-controlled. Building a world-leading IM open-source community, including client SDKs and servers.",
       },
       t2: {
-        title: "Easy to Extend",
-        desc: 'The server is implemented in Golang, introducing the pioneering "Everything is a Message" communication model, which simplifies the implementation of custom messages and extended features.',
+        title: "Easily Extensible",
+        desc: "The server is implemented in Golang, pioneering the “everything is a message” communication model, easily realizing custom messages and extended features.",
       },
       t3: {
         title: "High Performance",
-        desc: "Supports layered governance architecture in clusters, has been tested by a large number of users, and abstracts the storage models for online messages, offline messages, and historical messages.",
+        desc: "Supports cluster hierarchical governance architecture, proven by massive users, abstracts online message, offline message, and historical message storage model.",
       },
       t4: {
         title: "Full Platform Support",
-        desc: "Supports native iOS, Android; Cross-platform Flutter, uni-app, ReactNative; All major web front-end frameworks such as React, Vue; Mini Programs; PC support with Electron.",
+        desc: "Native support for iOS, Android; Cross-platform support for Flutter, uni-app, ReactNative; Support for all major web front-end frameworks like React, Vue; Mini-programs; PC support for Electron.",
       },
     },
     part8: {
-      title_pre: "Built on ",
+      title_pre: "Built on",
       title: "Open Source",
       desc1:
-        "The core of OpenIM - the server and client SDK - is always free and open source.",
-      desc2: "Reference demos are available for different platforms:",
+        "The core of OpenIM—-the server and client SDKs—-are always free and open source.",
+      desc2: "Demo for different platforms are available for reference:",
     },
     part9: {
-      title_pre: "Open source,free,and universal instant ",
-      title: "messaging components",
-      desc: "Open source,free,and universal instant messaging components",
-      btn_begin: "Start",
-      btn_docs: "Document",
+      title_pre: "Open source, free, universal",
+      title: "instant messaging component",
+      desc: "Open source, free, and universal instant messaging components",
+      btn_begin: "Start Experience",
+      btn_docs: "Read Documentation",
     },
   },
   price: {
-    title_pre: "Purchase the ",
-    title: "IM module you need",
-    desc: "Choose the appropriate module",
+    title_pre: "Choose the right",
+    title: "IM module",
+    desc: "Pay per module, flexible combination and purchase",
     freeTable: {
-      title: "Free Services",
-      thead: ["Project", "Open source license", "Cost"],
+      title: "Free Projects",
+      thead: ["Project", "Open Source License", "Cost"],
       tbody: [
         {
-          project: "Open-IM-Server",
+          project: "open-im-server",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-Server",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-server",
         },
         {
-          project: "Open-IM-SDK-Flutter",
+          project: "openim-sdk-core",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Flutter",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/openim-sdk-core",
         },
         {
-          project: "Open-IM-SDK-uni-app",
+          project: "open-im-sdk-flutter",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Uniapp",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-flutter",
         },
         {
-          project: "Open-IM-SDK-iOS",
+          project: "open-im-sdk-uni-app",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-iOS",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-uniapp",
         },
         {
-          project: "Open-IM-SDK-ReactNative",
+          project: "open-im-sdk-ios",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-ReactNative",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-ios",
         },
         {
-          project: "Open-IM-SDK-Android",
+          project: "open-im-sdk-reactnative",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Android",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-reactnative",
         },
         {
-          project: "Open-IM-SDK-Web-Wasm",
+          project: "open-im-sdk-android",
           protocol: "Apache-2.0 License",
-          price: "100% open source, free for commercial use",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Web-Wasm",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-android",
+        },
+        {
+          project: "open-im-sdk-web-wasm",
+          protocol: "Apache-2.0 License",
+          price: "100% Open Source, Free for Commercial Use",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-web-wasm",
         },
       ],
     },
     paidTables: {
-      title: "Fee-based Services",
-      desc: "Click to contact us",
+      title: "Paid Projects",
+      desc: "Contact business for pricing inquiries",
       IMTable: {
-        thead: ["IM client", "Description"],
+        thead: ["Project", "Description"],
         tbody: [
           {
-            project: "Native iOS",
-            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+            project: "Client Versions",
+            desc: "",
           },
           {
-            project: "Native Android",
-            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+            project: "Basic Version",
+            desc: "Includes basic IM software functionalities, the open-source server can be used",
           },
           {
-            project: "Flutter（Including iOS and Android）",
-            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+            project: "Advanced Version",
+            desc: "Adds friend circle, message encryption, message bulk sending assistant, periodic message deletion features. Use advanced server version.",
           },
           {
-            project: "electron(Including Web, Windows、 Mac, Linux)",
-            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+            project: "Advanced Version + Audio and Video",
+            desc: "Adds audio and video calls, friend circle, message encryption, message bulk sending assistant, periodic message deletion features. Use advanced server version.",
           },
           {
-            project: "H5",
-            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+            project: "Types of Clients",
+            desc: "",
           },
           {
-            project: "uni-app（Including iOS and Android）",
-            desc: "With a complete UI interface, the server side uses the Open-IM-Server open source project",
+            project: "iOS Native",
+            desc: "With a complete UI interface",
+          },
+          {
+            project: "Android Native",
+            desc: "With a complete UI interface",
+          },
+          {
+            project: "Flutter Cross-platform (including iOS, Android)",
+            desc: "With a complete UI interface",
+          },
+          {
+            project:
+              "Electron Cross-platform (including Web, Windows, Mac, Linux, domestic systems such as: UOS, Kylin)",
+            desc: "With a complete UI interface",
+          },
+          {
+            project: "Uni-app Cross-platform (including iOS, Android)",
+            desc: "With a complete UI interface",
           },
         ],
       },
       OtherClientTable: {
-        thead: ["Other clients", "Description"],
+        thead: ["Other Clients", "Description"],
         tbody: [
           {
             project: "Video Conference",
-            desc: "With a complete UI interface, and you need to purchase an audio and video server first.",
+            desc: "Client with a complete UI interface. Requires prior purchase of audio and video server.",
           },
           {
-            project: "Moments",
-            desc: "With a complete UI interface, and the server can use open-source (not yet developed on the PC side)",
+            project: "Friend Circle",
+            desc: "Client with a complete UI interface. The open-source server can be used (PC version not developed yet).",
           },
         ],
       },
@@ -179,50 +202,29 @@ const en = {
         thead: ["Server", "Description"],
         tbody: [
           {
-            project: "SFU based audio and video call",
-            desc:
-              "Only binary files are provided, supporting single person and\n" +
-              "multi person audio and video. Supports video conferencing \n" +
-              "and shared screensCurtain, host banned wheat.",
+            project: "SFU-based Audio and Video Calls",
+            desc: "Provides binary files, supports single and multi-person audio and video. Supports video conferences, screen sharing, host muting.",
           },
           {
-            project: "Organizational structure",
-            desc:
-              "The client comes with a complete UI interface, supporting \n" +
-              "a multi-level organizational structure, and API interface \n" +
-              "docking.",
+            project: "Advanced IM Server",
+            desc: "Supports message encryption, scheduled message deletion, etc.",
           },
           {
-            project: "Register and log in to the business server",
-            desc:
-              "SMS verification code registration, invitation code mechanism, \n" +
-              "and management backend API.",
-          },
-          {
-            project: "Encryption plugin",
-            desc:
-              "Message content transmission and storage support national \n" +
-              "security/AES algorithm, symmetric encryption, user+version \n" +
-              "number",
+            project: "Chat Business System Advanced Server",
+            desc: "Supports friend circle, message bulk sending assistant, etc.",
           },
         ],
       },
       OtherProject: {
-        thead: ["Others", "Description"],
+        thead: ["Other Projects", "Description"],
         tbody: [
           {
-            project: "Android auto start activation",
-            desc:
-              "Need to manually set self start, display at the top level, pop-up \n" +
-              "interface in the background, lock screen display, audio and video calls\n" +
-              "Popups, new message reminders.",
+            project: "Android Self-startup Keep Alive",
+            desc: "Requires manual setting for self-startup, displays on top, pops up in the background, lock screen display, video call popup, new message notification.",
           },
           {
-            project: "Management Backend Web Frontend",
-            desc:
-              "Complete UI interface. Including user management, group \n" +
-              "management, registration management, and application management.*Purchase or Docker deployment is required to log in and register\n" +
-              " the business server.",
+            project: "Management Backend Web Version",
+            desc: "With a complete UI interface. Includes user management, group management, registration management, application management.",
           },
         ],
       },

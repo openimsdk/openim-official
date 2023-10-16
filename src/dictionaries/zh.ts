@@ -3,7 +3,7 @@ const zh = {
     part1: {
       en: "Open source SDK for Instant Messaging",
       text: "开源、免费、通用的即时通讯组件",
-      desc: "OpenIM包括服务端和客户端SDK，实现了高性能、轻量级、易扩展等重要特性。开发者通过集成OpenIM组件，并私有化部署服务端，可以将即时通讯、实时网络能力快速集成到自身应用中，确保业务数据的安全性和私密性。",
+      desc: "OpenIM包括服务端和客户端SDK，实现了高性能、轻量级、易扩展等重要特性。开发者通过集成OpenIM SDK，并私有化部署服务端，可以将即时通讯、实时网络能力快速集成到自身应用中，确保业务数据的安全性和私密性。",
       btn_begin: "开始体验",
       btn_docs: "阅读文档",
     },
@@ -13,9 +13,9 @@ const zh = {
       desc: "OpenIM的开发者社区，覆盖个人开发者、初创企业和大型企业。",
       github: "查看GitHub",
       join: "加入微信社区",
-      github_stars:"GITHUB STARS",
-      slack_members:"微信社群",
-      projects:"项目"
+      github_stars: "GITHUB STARS",
+      slack_members: "微信社群",
+      projects: "项目",
     },
     part3: {
       title_pre: "支持多种",
@@ -27,7 +27,7 @@ const zh = {
       title_pre: "随时随地",
       title: "高效会议",
       img: "/images/meeting_zh.png",
-      desc: "基于IM的100%可靠必达信令能力打通M系统，和聊天应用深度整合。单会议支持同时百人视频，千人订阅，服务端音视频录制。",
+      desc: "基于IM的100%可靠必达信令能力打通IM系统，和聊天应用深度整合。单会议支持同时百人视频，千人订阅，服务端音视频录制。",
     },
     part5: {
       title_pre: "单聊群聊满足各种",
@@ -47,7 +47,7 @@ const zh = {
       sub_title: "开源、免费、通用的即时通讯组件。一键部署，轻松集成。",
       t1: {
         title: "开源",
-        desc: "核心代码开源，数据自我掌控，打造全球领先的IM开源社区，括客户端SDK和服务端，打造全球领先的IM开源社区。",
+        desc: "核心代码开源，数据自我掌控，打造全球领先的IM开源社区，包括客户端SDK和服务端，打造全球领先的IM开源社区。",
       },
       t2: {
         title: "易扩展",
@@ -85,46 +85,52 @@ const zh = {
       thead: ["项目", "开源协议", "费用"],
       tbody: [
         {
-          project: "Open-IM-Server",
+          project: "open-im-server",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-Server",
+          url: "https://github.com/OpenIMSDK/open-im-server",
         },
         {
-          project: "Open-IM-SDK-Flutter",
+          project: "openim-sdk-core",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Flutter",
+          url: "https://github.com/OpenIMSDK/openim-sdk-core",
         },
         {
-          project: "Open-IM-SDK-uni-app",
+          project: "open-im-sdk-flutter",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Uniapp",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-flutter",
         },
         {
-          project: "Open-IM-SDK-iOS",
+          project: "open-im-sdk-uni-app",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-iOS",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-uniapp",
         },
         {
-          project: "Open-IM-SDK-ReactNative",
+          project: "open-im-sdk-ios",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-ReactNative",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-ios",
         },
         {
-          project: "Open-IM-SDK-Android",
+          project: "open-im-sdk-reactnative",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Android",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-reactnative",
         },
         {
-          project: "Open-IM-SDK-Web-Wasm",
+          project: "open-im-sdk-android",
           protocol: "Apache-2.0 License",
           price: "100%开源，免费商用",
-          url: "https://github.com/OpenIMSDK/Open-IM-SDK-Web-Wasm",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-android",
+        },
+        {
+          project: "open-im-sdk-web-wasm",
+          protocol: "Apache-2.0 License",
+          price: "100%开源，免费商用",
+          url: "https://github.com/OpenIMSDK/open-im-sdk-web-wasm",
         },
       ],
     },
@@ -132,32 +138,48 @@ const zh = {
       title: "付费项目",
       desc: "联系商务咨询价格",
       IMTable: {
-        thead: ["IM客户端", "说明"],
+        thead: ["项目", "说明"],
         tbody: [
           {
+            project: "客户端版本",
+            desc: "",
+          },
+          {
+            project: "基础版",
+            desc: "包含IM软件基本功能，服务端用开源的即可",
+          },
+          {
+            project: "高级版",
+            desc: "增加朋友圈、消息加密、消息群发助手、消息定期删除功能，服务端使用高级版服务端",
+          },
+          {
+            project: "高级版+音视频",
+            desc: "增加音视频通话、朋友圈、消息加密、消息群发助手、消息定期删除功能，服务端使用高级版服务端",
+          },
+          {
+            project: "客户端种类",
+            desc: "",
+          },
+          {
             project: "iOS原生",
-            desc: "带完整UI界面，服务端用开源的即可",
+            desc: "带完整UI界面",
           },
           {
             project: "Android原生",
-            desc: "带完整UI界面，服务端用开源的即可",
+            desc: "带完整UI界面",
           },
           {
             project: "Flutter跨端（含iOS、Android）",
-            desc: "带完整UI界面，服务端用开源的即可",
+            desc: "带完整UI界面",
           },
           {
             project:
               "electron跨端(含Web、Windows、 Mac、Linux，国产系统如：统信、 麒麟）",
-            desc: "带完整UI界面，服务端用开源的即可",
-          },
-          {
-            project: "H5",
-            desc: "带完整UI界面，服务端用开源的即可",
+            desc: "带完整UI界面",
           },
           {
             project: "uni-app跨端（含iOS、Android）",
-            desc: "带完整UI界面，服务端用开源的即可",
+            desc: "带完整UI界面",
           },
         ],
       },
@@ -179,19 +201,15 @@ const zh = {
         tbody: [
           {
             project: "基于SFU音视频通话",
-            desc: "仅提供二进制文件，支持单人、多人音视频。支持视频会议、共享屏幕，主持人禁麦。",
+            desc: "提供二进制文件，支持单人、多人音视频。支持视频会议、共享屏幕，主持人禁麦。",
           },
           {
-            project: "组织架构",
-            desc: "客户端带完整UI界面，支持多层级组织架构，api接口对接。",
+            project: "IM高级版服务端",
+            desc: "支持消息加密、消息定时删除等功能。",
           },
           {
-            project: "注册登录业务服务端",
-            desc: "短信验证码注册、邀请码机制、管理后台api。",
-          },
-          {
-            project: "加密插件",
-            desc: "消息内容传输和存储支持国密/AES算法，对称加密、用户+版本号",
+            project: "Chat业务系统高级版服务端",
+            desc: "支持朋友圈、消息群发助手等功能。",
           },
         ],
       },
@@ -204,7 +222,7 @@ const zh = {
           },
           {
             project: "管理后台web端",
-            desc: "完整UI界面。包括用户管理、群组管理、注册管理、应用管理。*需购买或docker方式部署登录注册业务服务端。",
+            desc: "完整UI界面。包括用户管理、群组管理、注册管理、应用管理。",
           },
         ],
       },

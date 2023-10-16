@@ -1,5 +1,27 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+# OpenIM Official Website
+
+This repository contains the code for the official website of OpenIM, an open-source SDK for Instant Messaging.
+
+## Development
+
+- Clone the repository: `git clone https://github.com/openimsdk/openim-official`
+- Navigate to the project directory: `cd openim-official`
+- Install dependencies: `npm i`
+- Run the development server: `npm run dev` or `yarn dev` or `pnpm dev`
+- Open [http://localhost:30002](http://localhost:30002) in your browser to see the website.
+
+## Production Build
+
+- Build for production: `npm run build`
+- Start the production server: `npm run start`
+
+## Deployment on Vercel
+
+Deploy your Next.js app on the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) for the best experience.
+
 ## Getting Started
 
 First, run the development server:
@@ -27,8 +49,11 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome contributions from the community! Please refer to our [CONTRIBUTING.md](https://github.com/openimsdk/community/tree/main/CONTRIBUTING.md) file for detailed information on how to contribute.
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/openimsdk/docs/blob/main/LICENSE).

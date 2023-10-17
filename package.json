@@ -13,6 +13,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
     "@heroicons/react": "^2.0.18",
+    "@netlify/plugin-nextjs": "^4.40.2",
     "@prisma/client": "^4.14.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "20.1.5",

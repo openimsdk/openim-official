@@ -101,7 +101,7 @@ const BCTabs = () => {
           </div>
         </div>
       ))}
-      <div className="flex flex-col border-b border-b-[#525868] md:flex-row">
+      {/* <div className="flex flex-col border-b border-b-[#525868] md:flex-row">
         <div className="md: flex items-center justify-center pt-3 md:min-w-[180px] md:border-r md:border-r-[#525868]">
           <div>管理后台</div>
         </div>
@@ -133,7 +133,7 @@ const BCTabs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

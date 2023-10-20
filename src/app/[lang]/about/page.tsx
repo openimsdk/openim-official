@@ -17,7 +17,6 @@ const About = () => {
         </div>
         <ul className="relative pb-12">
           <li className="max-w-3xl">
-            <p className="py-4 text-lg font-extrabold">托云信息技术（成都）有限公司</p>
             <p className="text-sm sm:text-base">
               我们致力于通过开源模式，为全球企业/开发者提供简单、易用、高效的IM服务和实时音视频通讯能力，帮助开发者降低项目的开发成本，
               并让开发者掌控业务的核心数据。

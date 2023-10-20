@@ -82,7 +82,7 @@ const CommunitySection = ({
 
       <div className="mx-[8vw] flex flex-row justify-center py-10 sm:py-20">
         <div>
-          <p className="pb-4 text-3xl font-thin sm:text-6xl">11.0K</p>
+          <p className="pb-4 text-3xl font-thin sm:text-6xl">12.0K</p>
           <p className="text-center text-xs font-thin">
             {dictionary["home"].part2.github_stars}
           </p>

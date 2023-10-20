@@ -8,7 +8,6 @@ const text = {
   zh: {
     product: {
       title: "产品",
-      sdk: "开源SDK",
       demo: "商用体验demo",
     },
 
@@ -31,7 +30,6 @@ const text = {
   en: {
     product: {
       title: "Product",
-      sdk: "Open source SDK",
       demo: "Commercial experience demo",
     },
 
@@ -64,22 +62,7 @@ const FooterBar = () => {
       <footer className="footer grid grid-cols-2 gap-x-4 gap-y-8 px-[8vw] py-10 text-neutral-content md:flex md:justify-between">
         <div>
           <span className="footer-title">{text[language].product.title}</span>
-          <Link
-            href="https://github.com/OpenIMSDK/openim-sdk-core"
-            target="_blank"
-            className="link-hover link"
-          >
-            {text[language].product.sdk}
-          </Link>
-          <Link
-            className="link-hover link"
-            target={isZh ? undefined : "_blank"}
-            href={
-              !isZh
-                ? "https://github.com/orgs/OpenIMSDK/repositories?q=Demo&type=all&language=&sort="
-                : `/${language}/demo`
-            }
-          >
+          <Link className="link-hover link" href={`/${language}/demo`}>
             {text[language].product.demo}
           </Link>
         </div>
@@ -102,34 +85,11 @@ const FooterBar = () => {
         )}
         <div>
           <span className="footer-title">{text[language].contact.title}</span>
-          {isZh && (
-            <>
-              <p>{text[language].contact.wechat}</p>
-              <p>OpenIM-RTC</p>
-            </>
-          )}
-
-          {!isZh && (
-            <Link
-              href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
-              className="link-hover link"
-            >
-              Slack
-            </Link>
-          )}
+          <Link href="mailto:service@open-im.com" className="link-hover link">
+            service@open-im.com
+          </Link>
         </div>
       </footer>
-      <div className="footer-center pb-6 pt-12">
-        {isZh && (
-          <a
-            className="link-hover link text-sm text-[#006CFFFF]"
-            href="https://beian.miit.gov.cn/"
-            target="_blank"
-          >
-            蜀ICP备2021015500号
-          </a>
-        )}
-      </div>
     </div>
   );
 };

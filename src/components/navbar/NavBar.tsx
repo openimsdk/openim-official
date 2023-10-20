@@ -28,11 +28,11 @@ const text = {
         href: "https://docs.openim.io",
         target: "_blank",
       },
-      {
-        name: "定价",
-        href: "/zh/price",
-        target: undefined,
-      },
+      // {
+      //   name: "定价",
+      //   href: "/zh/price",
+      //   target: undefined,
+      // },
       {
         name: "关于我们",
         href: "/zh/about",
@@ -58,11 +58,11 @@ const text = {
       //   name: "Developer Center",
       //   href: "https://docs.openim.io",
       // },
-      {
-        name: "Price",
-        href: "/en/price",
-        target: undefined,
-      },
+      // {
+      //   name: "Price",
+      //   href: "/en/price",
+      //   target: undefined,
+      // },
       // {
       //   name: "About us",
       //   href: "/en/about",
@@ -199,7 +199,7 @@ const NavBar = () => {
             src="/images/nav_github_icon.png"
             alt="github"
           />
-          <span className="ml-2">11k</span>
+          <span className="ml-2">12k</span>
         </Link>
         {isZh && (
           <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">

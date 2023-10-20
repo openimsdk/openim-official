@@ -12,7 +12,7 @@ The documentation for OpenIM is hosted on GitHub as well as on an official docum
    + Repository URL: [https://github.com/OpenIMSDK/docs/](https://github.com/OpenIMSDK/docs/).
    + This repository contains the version 3 documentation for OpenIM, and developers can contribute to the documentation by creating a GitHub account and making pull requests.
 2. **Official Documentation Site**:
-   + Documentation URL: [https://doc.rentsoft.cn](https://doc.rentsoft.cn/) Now update to [https://openim.io](https://openim.io).
+   + Documentation URL: [https://docs.openim.io](https://docs.openim.io/) Now update to [https://openim.io](https://openim.io).
    + The official documentation site provides a structured and detailed guide for using OpenIM, covering various SDKs, guides, and API references. It also offers links to demo applications and the community Slack channel for support and interaction with other developers.
 3. **Community and Additional Resources**:
    + OpenIM also maintains a community-driven approach, providing a Slack community for developers to share ideas, get help, and connect with others. They encourage developers to join their community, contribute to open-source projects, and improve their [engineering skills through collaboration](https://github.com/openimsdk).

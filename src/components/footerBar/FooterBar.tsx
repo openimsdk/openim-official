@@ -85,7 +85,7 @@ const FooterBar = () => {
         </div>
         <div>
           <span className="footer-title">{text[language].developer.title}</span>
-          <Link href="https://doc.rentsoft.cn" className="link-hover link">
+          <Link href="https://docs.openim.io" className="link-hover link">
             {text[language].developer.document}
           </Link>
           <Link href="https://github.com/OpenIMSDK" className="link-hover link">

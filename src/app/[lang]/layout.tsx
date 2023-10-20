@@ -1,4 +1,5 @@
 import NavBar from "@/components/navbar/NavBar";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.scss";
 
 import { Locale } from "@/i18n-config";
@@ -25,6 +26,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <FooterBar />
+        <Analytics />
       </body>
     </html>
   );

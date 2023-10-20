@@ -28,7 +28,7 @@ const BottomStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
 
           <Link
             className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-36 flex-row items-center justify-center md:h-16 md:w-48"
-            href="https://doc.rentsoft.cn"
+            href="https://docs.openim.io"
           >
             <p>{dictionary["home"].part9.btn_docs}</p>
             <ChevronRightIcon className="h-6 w-6 text-[#006CFFFF] sm:pl-2" />

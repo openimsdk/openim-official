@@ -8,7 +8,7 @@ const text = {
   zh: {
     product: {
       title: "产品",
-      demo: "商用体验demo",
+      demo: "商用版本",
     },
 
     developer: {
@@ -62,7 +62,7 @@ const FooterBar = () => {
       <footer className="footer grid grid-cols-2 gap-x-4 gap-y-8 px-[8vw] py-10 text-neutral-content md:flex md:justify-between">
         <div>
           <span className="footer-title">{text[language].product.title}</span>
-          <Link className="link-hover link" href={`/${language}/demo`}>
+          <Link className="link-hover link" href={`/${language}/commercial`}>
             {text[language].product.demo}
           </Link>
         </div>

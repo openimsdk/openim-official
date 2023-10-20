@@ -19,8 +19,8 @@ const text = {
         target: undefined,
       },
       {
-        name: "体验Demo",
-        href: "/zh/demo",
+        name: "商用版本",
+        href: "/zh/commercial",
         target: undefined,
       },
       {

@@ -40,7 +40,7 @@ const CodeStartSection = ({
             <Link
               className={clsx(
                 "absolute bottom-0 left-0 right-0 top-0 z-10 mx-4 flex h-12 w-36 items-center md:h-16 md:w-48",
-                isZh && "mx-0 justify-center",
+                isZh && "!mx-0 justify-center",
               )}
               href="https://docs.openim.io/"
             >

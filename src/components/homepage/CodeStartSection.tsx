@@ -3,8 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Dictionary } from "@/dictionaries/en";
+import clsx from "clsx";
 
-const CodeStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
+const CodeStartSection = ({
+  dictionary,
+  isZh,
+}: {
+  dictionary: Dictionary;
+  isZh: boolean;
+}) => {
   return (
     <div className="mx-[8vw] my-20 sm:my-36 md:flex md:flex-row md:justify-between">
       <div className="w-full sm:pr-2 md:w-1/2 md:pr-5  xl:pr-20">
@@ -31,11 +38,14 @@ const CodeStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
           <div className="relative ml-5 h-12 w-36 md:h-16 md:w-48">
             <div className="btn_polygon_border h-12 w-36 bg-[#2c2c2c] md:h-16 md:w-48"></div>
             <Link
-              className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-36 flex-row items-center justify-center md:h-16 md:w-48"
+              className={clsx(
+                "absolute bottom-0 left-0 right-0 top-0 z-10 mx-4 flex h-12 w-36 items-center md:h-16 md:w-48",
+                isZh && "mx-0 justify-center",
+              )}
               href="https://docs.openim.io/"
             >
               <p>{dictionary["home"].part1.btn_docs}</p>
-              <ChevronRightIcon className="h-6 w-8 pl-2 text-[#006CFFFF]" />
+              {isZh && <ChevronRightIcon className="h-6 w-8 pl-2 text-[#006CFFFF]" />}
             </Link>
           </div>
         </div>

@@ -18,31 +18,31 @@ const en = {
       projects: "Projects",
     },
     part3: {
-      title_pre: "Supports a variety of",
+      title_pre: "Supports a variety of ",
       title: "message types",
       img: "/images/message_en.png",
       desc: "Supports almost all message types, including text, images, emojis, voice, video, geolocation, files, quotations, business cards, system notifications, and custom messages. Supports single and multi-person audio and video calls. Supported on iOS, Android, Flutter, uni-app, ReactNative, Electron, Web, H5.",
     },
     part4: {
-      title_pre: "Efficient meetings",
+      title_pre: "Efficient meetings ",
       title: "anytime, anywhere",
       img: "/images/meeting_en.png",
       desc: "100% reliable signaling ability based on IM connects the IM system, deeply integrating with chat applications. Single meeting supports simultaneous video of hundreds of people and thousands of subscribers, server-side audio and video recording.",
     },
     part5: {
-      title_pre: "Single and group chats cater to all kinds of",
+      title_pre: "Single and group chats cater to all kinds of ",
       title: "social scenarios",
       img: "/images/social_en.png",
       desc: "App administrators, group owners, group administrators, and regular members. Features like mute, group announcements, group verification, unlimited group members, and on-demand group message loading.",
     },
     part6: {
-      title_pre: "Special",
+      title_pre: "Special ",
       title: "Features",
       img: "/images/feature_en.png",
       desc: "Supports custom duration of read-and-burn confidential chats. Message editing feature broadens social scenarios, making instant messaging more diverse and interesting.",
     },
     part7: {
-      title_pre: "Advantages of",
+      title_pre: "Advantages of ",
       title: "OpenIM",
       sub_title:
         "Open source, free, universal instant messaging component. One-click deployment, easy integration.",
@@ -64,14 +64,14 @@ const en = {
       },
     },
     part8: {
-      title_pre: "Built on",
+      title_pre: "Built on ",
       title: "Open Source",
       desc1:
         "The core of OpenIM—-the server and client SDKs—-are always free and open source.",
       desc2: "Demo for different platforms are available for reference:",
     },
     part9: {
-      title_pre: "Open source, free, universal",
+      title_pre: "Open source, free, universal ",
       title: "instant messaging component",
       desc: "Open source, free, and universal instant messaging components",
       btn_begin: "Start Experience",

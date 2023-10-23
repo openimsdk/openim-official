@@ -12,7 +12,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   return (
     <main className="overflow-x-hidden">
-      <CodeStartSection dictionary={dictionary} />
+      <CodeStartSection dictionary={dictionary} isZh={lang === "zh"} />
 
       <CommunitySection dictionary={dictionary} isZh={lang === "zh"} />
 
@@ -22,7 +22,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
       <SourcesSection dictionary={dictionary} />
 
-      <BottomStartSection dictionary={dictionary} />
+      <BottomStartSection dictionary={dictionary} isZh={lang === "zh"} />
     </main>
   );
 }

@@ -42,13 +42,13 @@ const CommunitySection = ({
           </Link>
         </div>
         <div className="relative ml-3 h-12 w-40 md:h-16 md:w-48">
-          <div className="dropdown dropdown-hover  ">
+          <div className="dropdown dropdown-hover">
             <div className="btn_polygon_border h-12 w-40 bg-[#2c2c2c] md:h-16 md:w-48"></div>
             <Link
               href="https://join.slack.com/t/openimsdk/shared_invite/zt-1tmoj26uf-_FDy3dowVHBiGvLk9e5Xkg"
               className={clsx(
-                "absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-40 flex-row items-center justify-center text-sm md:h-16 md:w-48 md:text-base",
-                { "pointer-events-none": isZh },
+                "absolute bottom-0 left-0 right-0 top-0 z-10 mx-4 flex h-12 w-40 flex-row items-center justify-center text-sm md:h-16 md:w-48 md:text-base",
+                { "pointer-events-none mx-0": isZh },
               )}
             >
               <Image
@@ -56,7 +56,7 @@ const CommunitySection = ({
                 height={16}
                 src="/fonts/slack.png"
                 alt="github"
-                className="mr-2 md:mr-4"
+                className="mr-4"
               />
               <p>{dictionary["home"].part2.join}</p>
             </Link>

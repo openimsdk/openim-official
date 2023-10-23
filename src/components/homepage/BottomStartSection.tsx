@@ -1,9 +1,16 @@
 import { Dictionary } from "@/dictionaries/en";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import clsx from "clsx";
 import Link from "next/link";
 import React from "react";
 
-const BottomStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
+const BottomStartSection = ({
+  dictionary,
+  isZh,
+}: {
+  dictionary: Dictionary;
+  isZh: boolean;
+}) => {
   return (
     <div className="mx-[8vw] flex flex-col items-center py-20 sm:py-40">
       <div>
@@ -27,11 +34,14 @@ const BottomStartSection = ({ dictionary }: { dictionary: Dictionary }) => {
           <div className="btn_polygon_border h-12 w-36 bg-[#2c2c2c] md:h-16 md:w-48"></div>
 
           <Link
-            className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-12 w-36 flex-row items-center justify-center md:h-16 md:w-48"
+            className={clsx(
+              "absolute bottom-0 left-0 right-0 top-0 z-10 mx-4 flex h-12 w-36 items-center md:h-16 md:w-48",
+              isZh && "mx-0 justify-center",
+            )}
             href="https://docs.openim.io"
           >
             <p>{dictionary["home"].part9.btn_docs}</p>
-            <ChevronRightIcon className="h-6 w-6 text-[#006CFFFF] sm:pl-2" />
+            {isZh && <ChevronRightIcon className="h-6 w-6 text-[#006CFFFF] sm:pl-2" />}
           </Link>
         </div>
       </div>

@@ -8,6 +8,8 @@ import { i18n } from "./i18n-config";
 
 const START_WITH_INVALID_PATH_REGEX = /^\/(?:_next|images|fonts)\//;
 
+const defaultLocale = "en";
+
 const getLocale = (request: NextRequest): string | undefined => {
   const negotiatorHeaders: Record<string, string> = {};
 
@@ -29,8 +31,8 @@ export function middleware(request: NextRequest) {
   );
 
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request) || "en";
-    return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url));
+    // const locale = getLocale(request) || "en";
+    return NextResponse.redirect(new URL(`/${defaultLocale}/${pathname}`, request.url));
   }
 }
 

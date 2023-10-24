@@ -230,6 +230,18 @@ const en = {
       },
     },
   },
+  about: {
+    title_pre: "About",
+    title: "Us",
+    part1:
+      "We are committed to providing global enterprises/developers with simple, easy-to-use, and efficient IM services and real-time audio and video communication capabilities through the open-source model. Our aim is to help developers reduce the development cost of projects while allowing them to maintain control over their core business data.",
+    title2: "The Value of Open Source",
+    part2:
+      "From the inception of the company, 'open-source' has been our core strategy. Open-source fully embodies the internet spirit of freedom, equality, and sharing. Frequent data breaches, ransomware, and privacy abuses happening globally serve as wake-up calls for enterprises. Business managers now have a clearer understanding of the value of data assets and the importance of data security. Data security contributes immensely to an enterprise's core value. Given the undoubted importance of security for IM as core business data, OpenIM's open source and private deployment options ensure that enterprises can use it with confidence.",
+    title3: "Our Team",
+    part3:
+      "Our founding team comes from experienced IM technology groups. We are dedicated to creating service value with open-source technology, building a lightweight and highly available IM architecture. Developers only need to simply call the SDK to construct various instant messaging and real-time audio and video interaction scenarios within their application. OpenIM invites tech enthusiasts from around the world to participate in technical optimization, making integration easier for developers and equipping every application with IM capabilities, while considering enterprises' integration costs, server resources, and most importantly, data security and confidentiality.",
+  },
 };
 
 export type Dictionary = typeof en;

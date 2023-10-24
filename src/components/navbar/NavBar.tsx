@@ -54,19 +54,19 @@ const text = {
       //   name: "Demo",
       //   href: "/en/demo",
       // },
-      // {
-      //   name: "Developer Center",
-      //   href: "https://docs.openim.io",
-      // },
+      {
+        name: "Developer Center",
+        href: "https://docs.openim.io",
+      },
       // {
       //   name: "Price",
       //   href: "/en/price",
       //   target: undefined,
       // },
-      // {
-      //   name: "About us",
-      //   href: "/en/about",
-      // },
+      {
+        name: "About us",
+        href: "/en/about",
+      },
     ],
   },
 };
@@ -208,11 +208,11 @@ const NavBar = () => {
             </Link>
           </button>
         )}
-        <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#008FFFFF]">
+        {/* <button className="hidden text-xs sm:btn-sm sm:btn sm:mx-3 sm:bg-[#006CFFFF] sm:hover:bg-[#008FFFFF]">
           <Link href="https://github.com/OpenIMSDK" className="text-xs font-normal">
             {text[language].start}
           </Link>
-        </button>
+        </button> */}
         {/* eslint-disable-next-line */}
         <div className="dropdown dropdown-hover">
           <label

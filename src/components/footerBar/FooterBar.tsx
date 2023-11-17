@@ -87,8 +87,8 @@ const FooterBar = () => {
         }
         <div>
           <span className="footer-title">{text[language].contact.title}</span>
-          <Link href="mailto:service@open-im.com" className="link-hover link">
-            service@open-im.com
+          <Link href="mailto:contact@openim.io" className="link-hover link">
+            contact@openim.io
           </Link>
         </div>
       </footer>

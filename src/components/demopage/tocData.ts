@@ -157,7 +157,7 @@ export const toc_enterprise: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-3.4.0.dmg",
+    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-3.4.1.dmg",
   },
   {
     label: "Electron for Mac M1",
@@ -166,7 +166,7 @@ export const toc_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-3.4.0-arm64.dmg",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER-3.4.1-arm64.dmg",
   },
   {
     label: "Electron for Windows",
@@ -175,7 +175,7 @@ export const toc_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER%20Setup%203.4.0.exe",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER%20Setup%203.4.1.exe",
   },
   // {
   //   label: "Electron for Ubuntu/UOS/Kylinos",

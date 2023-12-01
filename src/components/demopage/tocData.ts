@@ -103,9 +103,9 @@ export const toc_enterprise: Demo[] = [
     label: "Flutter Android",
     icon: "/fonts/flutter_android.png",
     top_right_icon: "/fonts/qrcode.png",
-    qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM-Flutter-Full",
+    qrcode: "https://www.pgyer.com/app/qrcode/IM-FCER",
     hover: false,
-    download: "https://www.xcxwo.com/OpenIM-Flutter-Full",
+    download: "https://www.pgyer.com/IM-FCER",
     type: "mobile",
   },
   // {

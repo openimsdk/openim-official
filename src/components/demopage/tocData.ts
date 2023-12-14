@@ -145,6 +145,13 @@ export const toc_enterprise: Demo[] = [
     type: "mobile",
   },
   {
+    label: "H5",
+    icon: "/fonts/pc_web_toc.png",
+    top_right_icon: "",
+    hover: false,
+    download: "https://h5-enterprise.rentsoft.cn/",
+  },
+  {
     label: "Pc Web",
     icon: "/fonts/pc_web_toc.png",
     top_right_icon: "",

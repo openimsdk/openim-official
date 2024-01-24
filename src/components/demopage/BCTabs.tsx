@@ -93,47 +93,26 @@ const BCTabs = () => {
               <div>{data.label}</div>
               <div>{data.subLabel}</div>
             </div>
-            <div className="flex flex-wrap items-center justify-center px-[8vw] py-12 md:justify-start md:pl-[2vw]">
-              {data.demos.map((demo) => (
-                <TabsCard key={demo.label} demo_item={demo} />
-              ))}
+
+            <div className="px-[8vw] py-12 md:justify-start md:pl-[2vw]">
+              {active === 1 && (
+                <div className="mb-3 flex flex-col items-center">
+                  <div>
+                    <div>tob场景下所有账号默认从管理后台进行导入</div>
+                    <div>体验账号：testuser02~testuser101</div>
+                    <div>密码：123456a</div>
+                  </div>
+                </div>
+              )}
+              <div className="flex flex-wrap items-center justify-center ">
+                {data.demos.map((demo) => (
+                  <TabsCard key={demo.label} demo_item={demo} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
       ))}
-      {/* <div className="flex flex-col border-b border-b-[#525868] md:flex-row">
-        <div className="md: flex items-center justify-center pt-3 md:min-w-[180px] md:border-r md:border-r-[#525868]">
-          <div>管理后台</div>
-        </div>
-        <div className="flex flex-wrap items-center justify-center px-[8vw] py-12 md:pl-[4vw]">
-          <div className="flex flex-col items-center">
-            <div className="relative flex h-28 w-28 items-center justify-center rounded bg-[#1a2239] md:h-36 md:w-36 ">
-              <Image
-                src="/fonts/manage.png"
-                alt="management"
-                width={50}
-                height={50}
-              ></Image>
-            </div>
-            <Link
-              target="_blank"
-              href={`https://${!active ? "admin" : "admin-tob"}.rentsoft.cn`}
-              className=" link h-10 w-28 py-3 text-center text-white md:w-36"
-            >
-              管理后台
-            </Link>
-          </div>
-          <div className="mt-6 flex flex-col items-center md:ml-8 md:mt-0 md:items-start">
-            <div>
-              <div className="mb-2">测试账号：admin1</div>
-              <div>密码：admin1</div>
-            </div>
-            <div className="mt-3 text-sm">
-              *防止部分人员进行恶意操作，当前预览版本限制了部分功能。如需体验完整版本，请联系OpenIM官方。
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

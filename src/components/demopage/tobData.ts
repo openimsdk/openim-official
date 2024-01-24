@@ -99,57 +99,57 @@ export const tob_base_open: Demo[] = [
   },
 ];
 export const tob_enterprise: Demo[] = [
-  {
-    label: "Flutter Android",
-    icon: "/fonts/flutter_android.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM-Flutter-B-Full",
-    hover: false,
-    download: "https://www.xcxwo.com/OpenIM-Flutter-B-Full",
-    type: "mobile",
-  },
-  {
-    label: "Flutter IOS",
-    icon: "/fonts/native_ios.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "/fonts/flutter_ios_qrcode_b_e.png",
-    hover: false,
-    download: "https://testflight.apple.com/join/39xhz65U",
-    type: "mobile",
-  },
-  {
-    label: "Native Android",
-    icon: "/fonts/native_android.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "https://www.xcxwo.com/app/qrcode/IM-NBER",
-    hover: false,
-    download: "https://www.xcxwo.com/IM-NBER",
-    type: "mobile",
-  },
-  {
-    label: "Native IOS",
-    icon: "/fonts/native_ios.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "/fonts/native_ios_qrcode_b_e.png",
-    hover: false,
-    download: "https://testflight.apple.com/join/gOuBlFbw",
-    type: "mobile",
-  },
-  {
-    label: "uni-app Android",
-    icon: "/fonts/native_android.png",
-    top_right_icon: "/fonts/qrcode.png",
-    qrcode: "https://www.xcxwo.com/app/qrcode/IM-UBER",
-    hover: false,
-    download: "https://www.xcxwo.com/IM-UBER",
-    type: "mobile",
-  },
+  // {
+  //   label: "Flutter Android",
+  //   icon: "/fonts/flutter_android.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM-Flutter-B-Full",
+  //   hover: false,
+  //   download: "https://www.xcxwo.com/OpenIM-Flutter-B-Full",
+  //   type: "mobile",
+  // },
+  // {
+  //   label: "Flutter IOS",
+  //   icon: "/fonts/native_ios.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "/fonts/flutter_ios_qrcode_b_e.png",
+  //   hover: false,
+  //   download: "https://testflight.apple.com/join/39xhz65U",
+  //   type: "mobile",
+  // },
+  // {
+  //   label: "Native Android",
+  //   icon: "/fonts/native_android.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "https://www.xcxwo.com/app/qrcode/IM-NBER",
+  //   hover: false,
+  //   download: "https://www.xcxwo.com/IM-NBER",
+  //   type: "mobile",
+  // },
+  // {
+  //   label: "Native IOS",
+  //   icon: "/fonts/native_ios.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "/fonts/native_ios_qrcode_b_e.png",
+  //   hover: false,
+  //   download: "https://testflight.apple.com/join/gOuBlFbw",
+  //   type: "mobile",
+  // },
+  // {
+  //   label: "uni-app Android",
+  //   icon: "/fonts/native_android.png",
+  //   top_right_icon: "/fonts/qrcode.png",
+  //   qrcode: "https://www.xcxwo.com/app/qrcode/IM-UBER",
+  //   hover: false,
+  //   download: "https://www.xcxwo.com/IM-UBER",
+  //   type: "mobile",
+  // },
   {
     label: "Pc Web",
     icon: "/fonts/pc_web_toc.png",
     top_right_icon: "",
     hover: false,
-    download: "https://web-enterprise-tob.rentsoft.cn/",
+    download: "https://web-enterprise-tob.rentsoft.cn",
   },
   {
     label: "Electron for Mac",
@@ -157,7 +157,8 @@ export const tob_enterprise: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER-1.0.0.dmg",
+    download:
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
   },
   {
     label: "Electron for Mac M1",
@@ -166,7 +167,7 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER-1.0.0-arm64.dmg",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
   },
   {
     label: "Electron for Windows",
@@ -174,8 +175,7 @@ export const tob_enterprise: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER%20Setup%201.0.0.exe",
+    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1.exe",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos",
@@ -184,7 +184,7 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_1.0.0_amd64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos arm64",
@@ -193,6 +193,6 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_1.0.0_arm64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
   },
 ];

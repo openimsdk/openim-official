@@ -98,7 +98,9 @@ const BCTabs = () => {
               {active === 1 && (
                 <div className="mb-3 flex flex-col items-center">
                   <div>
-                    <div>tob场景下所有账号默认从管理后台进行导入</div>
+                    <div>
+                      tob场景下增加了组织架构，不支持用户自行注册账号，所有账号默认从管理后台进行导入
+                    </div>
                     <div>体验账号：testuser02~testuser101</div>
                     <div>密码：123456a</div>
                   </div>

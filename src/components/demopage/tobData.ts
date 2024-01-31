@@ -99,15 +99,15 @@ export const tob_base_open: Demo[] = [
   },
 ];
 export const tob_enterprise: Demo[] = [
-  // {
-  //   label: "Flutter Android",
-  //   icon: "/fonts/flutter_android.png",
-  //   top_right_icon: "/fonts/qrcode.png",
-  //   qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM-Flutter-B-Full",
-  //   hover: false,
-  //   download: "https://www.xcxwo.com/OpenIM-Flutter-B-Full",
-  //   type: "mobile",
-  // },
+  {
+    label: "Flutter",
+    icon: "/fonts/flutter_android.png",
+    top_right_icon: "/fonts/qrcode.png",
+    qrcode: "https://www.xcxwo.com/app/qrcode/IM-FBER",
+    hover: false,
+    download: "https://www.pgyer.com/IM-FBER",
+    type: "mobile",
+  },
   // {
   //   label: "Flutter IOS",
   //   icon: "/fonts/native_ios.png",

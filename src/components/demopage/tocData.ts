@@ -100,7 +100,7 @@ export const toc_base_open: Demo[] = [
 ];
 export const toc_enterprise: Demo[] = [
   {
-    label: "Flutter Android",
+    label: "Flutter",
     icon: "/fonts/flutter_android.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "https://www.pgyer.com/app/qrcode/IM-FCER",
@@ -118,7 +118,7 @@ export const toc_enterprise: Demo[] = [
   //   type: "mobile",
   // },
   {
-    label: "Native Android",
+    label: "Native",
     icon: "/fonts/native_android.png",
     top_right_icon: "/fonts/qrcode.png",
     qrcode: "https://www.xcxwo.com/app/qrcode/OpenIM-Enterprise",

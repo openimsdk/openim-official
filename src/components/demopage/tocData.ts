@@ -143,6 +143,7 @@ export const toc_enterprise: Demo[] = [
     hover: false,
     download: "https://www.xcxwo.com/IM-UCER",
     type: "mobile",
+    only_cn: true,
   },
   {
     label: "H5",
@@ -192,6 +193,7 @@ export const toc_enterprise: Demo[] = [
     hover: false,
     download:
       "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER_3.5.1_amd64.deb",
+    only_cn: true,
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos arm64",
@@ -201,5 +203,6 @@ export const toc_enterprise: Demo[] = [
     hover: false,
     download:
       "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-CER_3.5.1_arm64.deb",
+    only_cn: true,
   },
 ];

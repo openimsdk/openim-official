@@ -60,14 +60,12 @@ const FooterBar = () => {
   return (
     <div>
       <footer className="footer grid grid-cols-2 gap-x-4 gap-y-8 px-[8vw] py-10 text-neutral-content md:flex md:justify-between">
-        {isZh && (
-          <div>
-            <span className="footer-title">{text[language].product.title}</span>
-            <Link className="link-hover link" href={`/${language}/commercial`}>
-              {text[language].product.demo}
-            </Link>
-          </div>
-        )}
+        <div>
+          <span className="footer-title">{text[language].product.title}</span>
+          <Link className="link-hover link" href={`/${language}/commercial`}>
+            {text[language].product.demo}
+          </Link>
+        </div>
         <div>
           <span className="footer-title">{text[language].developer.title}</span>
           <Link href="https://docs.openim.io" className="link-hover link">

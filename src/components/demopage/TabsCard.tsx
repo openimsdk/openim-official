@@ -3,8 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Demo } from "./BCTabs";
+import { Dictionary } from "@/dictionaries/en";
 
-const TabsCard = ({ demo_item: demo }: { demo_item: Demo }) => {
+const TabsCard = ({
+  demo_item: demo,
+  dictionary,
+}: {
+  demo_item: Demo;
+  dictionary: Dictionary;
+}) => {
   const [hover, setHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -51,7 +58,7 @@ const TabsCard = ({ demo_item: demo }: { demo_item: Demo }) => {
             href={demo.download}
             className=" h-10 w-28 py-3 text-center text-[#006CFFFF] md:w-36"
           >
-            点击下载
+            {dictionary.commercial.part3.download}
           </Link>
         );
       } else if (demo.type === "mobile") {
@@ -61,7 +68,7 @@ const TabsCard = ({ demo_item: demo }: { demo_item: Demo }) => {
             href={demo.download}
             className=" h-10 w-28 py-3 text-center text-[#fff] md:w-36"
           >
-            扫码或点击下载
+            {dictionary.commercial.part3.scan_download}
           </Link>
         );
       }
@@ -71,7 +78,7 @@ const TabsCard = ({ demo_item: demo }: { demo_item: Demo }) => {
           href={demo.download}
           className=" h-10 w-28 py-3 text-center text-white md:w-36"
         >
-          点击访问
+          {dictionary.commercial.part3.visit}
         </Link>
       );
     }

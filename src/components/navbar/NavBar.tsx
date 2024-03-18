@@ -50,10 +50,10 @@ const text = {
         href: "/en",
         target: undefined,
       },
-      // {
-      //   name: "Demo",
-      //   href: "/en/demo",
-      // },
+      {
+        name: "Commercial",
+        href: "/en/commercial",
+      },
       {
         name: "Developer Center",
         href: "https://docs.openim.io",

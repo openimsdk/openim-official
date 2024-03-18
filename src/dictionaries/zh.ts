@@ -240,6 +240,28 @@ const zh = {
     part3:
       "创始团队来自资深IM技术团队，我们致力于用开源技术创造服务价值，打造轻量级、高可用的IM架构，开发者只需简单调用SDK,即可在应用内构建多种即时通讯及实时音视频互动场景。OpenIM邀请全球技术极客参与技术优化，让开发者轻松集成，让每一个应用都具备IM功能，同时考虑企业的接入成本、服务器资源以及最重要的数据安全性和私密性。",
   },
+  commercial: {
+    part1: {
+      title_pre: "下载体验",
+      title: "OpenIM",
+      desc: "最近更新时间：今天",
+    },
+    part2: {
+      title: "高级版",
+      sub_title: "（含音视频）",
+      c_version: "Toc 版本",
+      b_version: "Tob 版本",
+      b_desc:
+        "tob场景下增加了组织架构，不支持用户自行注册账号，所有账号默认从管理后台进行导入",
+      b_account: "体验账号：testuser02~testuser101",
+      b_password: "密码：123456a",
+    },
+    part3: {
+      download: "点击下载",
+      scan_download: "扫码或点击下载",
+      visit: "点击访问",
+    },
+  },
 };
 
 export default zh;

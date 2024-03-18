@@ -6,6 +6,8 @@ import Link from "next/link";
 import TabsCard from "@/components/demopage/TabsCard";
 import { toc_base_open, toc_enterprise } from "./tocData";
 import { tob_base_open, tob_enterprise } from "./tobData";
+import { Locale } from "@/i18n-config";
+import { Dictionary } from "@/dictionaries/en";
 
 export type DemoSource = {
   label: string;
@@ -20,6 +22,7 @@ export type Demo = {
   hover: boolean;
   qrcode?: string;
   type?: "pc" | "mobile";
+  only_cn?: boolean;
 };
 
 const renderList: DemoSource[][] = [
@@ -47,11 +50,12 @@ const renderList: DemoSource[][] = [
   ],
 ];
 
-const BCTabs = () => {
+const BCTabs = ({ lang, dictionary }: { lang: Locale; dictionary: Dictionary }) => {
   const [active, setActive] = useState(0);
 
   const renderData = renderList[active];
   const isToc = active === 0;
+  const isCn = lang === "zh";
 
   return (
     <div className="my-6 ">
@@ -62,7 +66,7 @@ const BCTabs = () => {
             isToc ? "mx-6 font-medium sm:mx-12  " : "mx-6 font-light sm:mx-12 "
           }
         >
-          <p className="text-lg">TOC 版本</p>
+          <p className="text-lg">{dictionary.commercial.part2.c_version}</p>
           <div
             className={
               isToc ? "mx-auto w-8 border-b-2 border-sky-600 py-1" : "mx-auto w-8 py-1"
@@ -75,7 +79,7 @@ const BCTabs = () => {
             active === 1 ? "mx-6 font-medium sm:mx-12 " : " mx-6 font-light sm:mx-12"
           }
         >
-          <p className="text-lg">TOB 版本</p>
+          <p className="text-lg">{dictionary.commercial.part2.b_version}</p>
           <div
             className={
               active === 1
@@ -90,26 +94,30 @@ const BCTabs = () => {
           {!idx && <div className="border-b border-b-[#525868] py-1"></div>}
           <div className="flex flex-col border-b border-b-[#525868] md:flex-row">
             <div className="flex flex-col items-center pt-3 md:min-w-[180px] md:justify-center md:border-r md:border-r-[#525868]">
-              <div>{data.label}</div>
-              <div>{data.subLabel}</div>
+              <div>{dictionary.commercial.part2.title}</div>
+              <div>{dictionary.commercial.part2.sub_title}</div>
             </div>
 
             <div className="px-[8vw] py-12 md:justify-start md:pl-[2vw]">
               {active === 1 && (
                 <div className="mb-3 flex flex-col items-center">
                   <div>
-                    <div>
-                      tob场景下增加了组织架构，不支持用户自行注册账号，所有账号默认从管理后台进行导入
-                    </div>
-                    <div>体验账号：testuser02~testuser101</div>
-                    <div>密码：123456a</div>
+                    <div>{dictionary.commercial.part2.b_desc}</div>
+                    <div>{dictionary.commercial.part2.b_account}</div>
+                    <div>{dictionary.commercial.part2.b_password}</div>
                   </div>
                 </div>
               )}
               <div className="flex flex-wrap items-center justify-center ">
-                {data.demos.map((demo) => (
-                  <TabsCard key={demo.label} demo_item={demo} />
-                ))}
+                {data.demos.map((demo) =>
+                  demo.only_cn && !isCn ? null : (
+                    <TabsCard
+                      key={demo.label}
+                      demo_item={demo}
+                      dictionary={dictionary}
+                    />
+                  ),
+                )}
               </div>
             </div>
           </div>

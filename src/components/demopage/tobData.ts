@@ -143,6 +143,7 @@ export const tob_enterprise: Demo[] = [
     hover: false,
     download: "https://www.xcxwo.com/IM-UBER",
     type: "mobile",
+    only_cn: true,
   },
   {
     label: "Pc Web",
@@ -185,6 +186,7 @@ export const tob_enterprise: Demo[] = [
     hover: false,
     download:
       "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
+    only_cn: true,
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos arm64",
@@ -194,5 +196,6 @@ export const tob_enterprise: Demo[] = [
     hover: false,
     download:
       "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
+    only_cn: true,
   },
 ];

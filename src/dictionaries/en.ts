@@ -242,6 +242,28 @@ const en = {
     part3:
       "Our founding team comes from experienced IM technology groups. We are dedicated to creating service value with open-source technology, building a lightweight and highly available IM architecture. Developers only need to simply call the SDK to construct various instant messaging and real-time audio and video interaction scenarios within their application. OpenIM invites tech enthusiasts from around the world to participate in technical optimization, making integration easier for developers and equipping every application with IM capabilities, while considering enterprises' integration costs, server resources, and most importantly, data security and confidentiality.",
   },
+  commercial: {
+    part1: {
+      title_pre: "Download Experience",
+      title: "OpenIM",
+      desc: "Last Updated: Today",
+    },
+    part2: {
+      title: "Premium Version",
+      sub_title: "(Includes Audio and Video)",
+      c_version: "Toc Version",
+      b_version: "Tob Version",
+      b_desc:
+        "In the Tob scenario, an organizational structure is added, self-registration by users is not supported, and all accounts are defaulted to be imported through the management backend.",
+      b_account: "Trial Account: testuser02~testuser101",
+      b_password: "Password: 123456a",
+    },
+    part3: {
+      download: "Click to Download",
+      scan_download: "Scan or Click to Download",
+      visit: "Click to Visit",
+    },
+  },
 };
 
 export type Dictionary = typeof en;

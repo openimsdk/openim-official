@@ -45,7 +45,7 @@ const CommunitySection = ({
           <div className="dropdown dropdown-hover">
             <div className="btn_polygon_border h-12 w-40 bg-[#2c2c2c] md:h-16 md:w-48"></div>
             <Link
-              href="https://join.slack.com/t/openimsdk/shared_invite/zt-22720d66b-o_FvKxMTGXtcnnnHiMqe9Q"
+              href="https://join.slack.com/t/openimsdk/shared_invite/zt-2hljfom5u-9ZuzP3NfEKW~BJKbpLm0Hw"
               className={clsx(
                 "absolute bottom-0 left-0 right-0 top-0 z-10 mx-4 flex h-12 w-40 flex-row items-center justify-center text-sm md:h-16 md:w-48 md:text-base",
                 { "pointer-events-none !mx-0": isZh },

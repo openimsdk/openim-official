@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import type { Locale } from "@/i18n-config";
 import clsx from "clsx";
+import { useState, useEffect } from "react";
 
 const text = {
   zh: {
@@ -74,6 +75,7 @@ const text = {
 const NavBar = () => {
   const pathname = usePathname();
   const language = pathname.split("/")[1] as Locale;
+  const [star, setStar] = useState("");
   // useEffect(() => {
   //   fetch("https://api.github.com/repos/OpenIMSDK/Open-IM-Server", {
   //     // headers: {
@@ -92,6 +94,19 @@ const NavBar = () => {
   //       console.error("Error:", error);
   //     });
   // }, []);
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/openimsdk/open-im-server", {})
+      .then((response) => response.json())
+      .then((data) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        const starCount = data.stargazers_count as number;
+        setStar(`${(starCount / 1000).toFixed(1)}k`);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
 
   const redirectedPathName = (locale: string) => {
     if (!pathname) return "/";
@@ -199,7 +214,7 @@ const NavBar = () => {
             src="/images/nav_github_icon.png"
             alt="github"
           />
-          <span className="ml-2">12k</span>
+          {star && <span className="ml-2">{star}</span>}
         </Link>
         {isZh && (
           <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">

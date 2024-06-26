@@ -219,7 +219,7 @@ const NavBar = () => {
             src="/images/nav_github_icon.png"
             alt="github"
           />
-          <span className="ml-2">{"13.3k"}</span>
+          {star && <span className="ml-2">{star}</span>}
         </Link>
         {isZh && (
           <button className="hidden sm:btn-sm sm:btn sm:hover:btn-outline sm:bg-black sm:text-white">

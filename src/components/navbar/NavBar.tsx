@@ -96,7 +96,7 @@ const NavBar = () => {
   // }, []);
 
   useEffect(() => {
-    const token = process.env.GITHUB_TOKEN as string;
+    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN as string;
     fetch("https://api.github.com/repos/openimsdk/open-im-server", {
       headers: {
         Authorization: `token ${token}`,

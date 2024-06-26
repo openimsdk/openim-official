@@ -96,7 +96,12 @@ const NavBar = () => {
   // }, []);
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/openimsdk/open-im-server", {})
+    const token = process.env.GITHUB_TOKEN as string;
+    fetch("https://api.github.com/repos/openimsdk/open-im-server", {
+      headers: {
+        Authorization: `token ${token}`,
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access

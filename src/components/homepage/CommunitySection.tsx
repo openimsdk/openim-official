@@ -1,7 +1,9 @@
+"use client";
+
 import { Dictionary } from "@/dictionaries/en";
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 
 const CommunitySection = ({
@@ -11,6 +13,24 @@ const CommunitySection = ({
   dictionary: Dictionary;
   isZh: boolean;
 }) => {
+  const [star, setStar] = useState("");
+  useEffect(() => {
+    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN as string;
+    fetch("https://api.github.com/repos/openimsdk/open-im-server", {
+      headers: {
+        Authorization: `token ${token}`,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        const starCount = data.stargazers_count as number;
+        setStar(`${(starCount / 1000).toFixed(1)}k`);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
   return (
     <div className="relative ">
       <div className="flex flex-row justify-center">
@@ -82,7 +102,7 @@ const CommunitySection = ({
 
       <div className="mx-[8vw] flex flex-row justify-center py-10 sm:py-20">
         <div>
-          <p className="pb-4 text-3xl font-thin sm:text-6xl">12.0K</p>
+          <p className="h-[76px] pb-4 text-3xl font-thin sm:text-6xl">{star || ""}</p>
           <p className="text-center text-xs font-thin">
             {dictionary["home"].part2.github_stars}
           </p>

@@ -1,4 +1,8 @@
 const en = {
+  title: {
+    title: "OpenIM Official",
+    description: "OpenIM Official",
+  },
   home: {
     part1: {
       en: "Open source SDK for Instant Messaging",

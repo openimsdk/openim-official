@@ -90,6 +90,17 @@ const FooterBar = () => {
           </Link>
         </div>
       </footer>
+      <div className="footer-center pb-6 pt-12">
+        {isZh && (
+          <a
+            className="link-hover link text-sm text-[#006CFFFF]"
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+          >
+            蜀ICP备2021015500号
+          </a>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,4 +1,8 @@
 const zh = {
+  title: {
+    title: "托云信息技术",
+    description: "OpenIM Official",
+  },
   home: {
     part1: {
       en: "Open source SDK for Instant Messaging",

@@ -4,14 +4,24 @@ import "./globals.scss";
 
 import { Locale } from "@/i18n-config";
 import FooterBar from "@/components/footerBar/FooterBar";
+import { Metadata } from "next";
+import { getDictionary } from "@/get-dictionary";
 
-export const metadata = {
-  title: "OpenIM Official",
-  description: "OpenIM Official",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: Locale };
+}): Promise<Metadata> {
+  const dictionary = await getDictionary(params.lang);
+
+  return {
+    title: dictionary.title.title,
+    description: "OpenIM Official",
+    icons: {
+      icon: "/favicon.ico",
+    },
+  };
+}
 
 export default function RootLayout({
   children,

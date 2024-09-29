@@ -159,7 +159,7 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_x64.dmg",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-BER_3.8.1_x64.dmg",
   },
   {
     label: "Electron for Mac M1",
@@ -168,7 +168,7 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_arm64.dmg",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-BER_3.8.1_arm64.dmg",
   },
   {
     label: "Electron for Windows",
@@ -176,7 +176,7 @@ export const tob_enterprise: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1.exe",
+    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-BER_3.8.1.exe",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos",
@@ -185,7 +185,7 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_amd64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-BER_3.8.1_amd64.deb",
     only_cn: true,
   },
   {
@@ -195,7 +195,7 @@ export const tob_enterprise: Demo[] = [
     type: "pc",
     hover: false,
     download:
-      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenIM-BER_3.5.1_arm64.deb",
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-BER_3.8.1_arm64.deb",
     only_cn: true,
   },
 ];

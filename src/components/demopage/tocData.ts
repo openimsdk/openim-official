@@ -183,7 +183,8 @@ export const toc_enterprise: Demo[] = [
     top_right_icon: "/fonts/download.png",
     type: "pc",
     hover: false,
-    download: "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-CER_3.8.1.exe",
+    download:
+      "https://app-1302656840.cos.ap-nanjing.myqcloud.com/OpenCorp-CER_3.8.1.exe",
   },
   {
     label: "Electron for Ubuntu/UOS/Kylinos",

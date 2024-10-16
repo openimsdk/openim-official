@@ -6,8 +6,9 @@ export default async function Demo({ params: { lang } }: { params: { lang: Local
   const dictionary = await getDictionary(lang);
 
   return (
-    <main className="overflow-x-hidden">
-      <div>
+    <main className="flex flex-1 items-center justify-center overflow-x-hidden">
+      Coming soon...
+      {/* <div>
         <div className="mx-[8vw] py-14">
           <div className="py-4 text-center">
             <span className="text-3xl">{dictionary.commercial.part1.title_pre}</span>
@@ -18,7 +19,7 @@ export default async function Demo({ params: { lang } }: { params: { lang: Local
           <p className="text-center text-sm">{dictionary.commercial.part1.desc}</p>
         </div>
         <BCTabs lang={lang} dictionary={dictionary} />
-      </div>
+      </div> */}
     </main>
   );
 }

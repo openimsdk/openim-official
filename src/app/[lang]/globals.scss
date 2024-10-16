@@ -14,6 +14,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: var(--full-height);
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(180deg, #000000 0%, #000821 20%, #030819 27%, #000A2B 37%, #00061A 70%, #000000 100%);

@@ -261,6 +261,8 @@ const zh = {
       scan_download: "扫码或点击下载",
       visit: "点击访问",
     },
+    contact:
+      "目前，OpenCorp针对企业用户提供体验版本。如贵公司有兴趣进行体验，请通过电子邮件联系我们：contact@openim.io。我们期待与您合作！",
   },
 };
 

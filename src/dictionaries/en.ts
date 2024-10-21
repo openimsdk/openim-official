@@ -263,6 +263,8 @@ const en = {
       scan_download: "Scan or Click to Download",
       visit: "Click to Visit",
     },
+    contact:
+      "Currently, OpenCorp offers trial opportunities specifically for corporate users. If your company is interested in participating, please contact us via email at: contact@openim.io. We look forward to collaborating with you!",
   },
 };
 

@@ -6,8 +6,8 @@ export default async function Demo({ params: { lang } }: { params: { lang: Local
   const dictionary = await getDictionary(lang);
 
   return (
-    <main className="flex flex-1 items-center justify-center overflow-x-hidden">
-      Coming soon...
+    <main className="mx-[15%] flex flex-1 items-center justify-center overflow-x-hidden">
+      {dictionary.commercial.contact}
       {/* <div>
         <div className="mx-[8vw] py-14">
           <div className="py-4 text-center">

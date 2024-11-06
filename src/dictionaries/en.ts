@@ -265,6 +265,27 @@ const en = {
     },
     contact:
       "Currently, OpenCorp offers trial opportunities specifically for corporate users. If your company is interested in participating, please contact us via email at: contact@openim.io. We look forward to collaborating with you!",
+    part4: {
+      title: "OpenIMSDK Version Information",
+      version_compare: "Version Comparison",
+      opensource_version: "Open Source Version",
+      version_title: "Version",
+      desc_title: "Description",
+      opensource_version_desc:
+        "Provides a complete SDK and server for IM, including a simple client demo.",
+      commercial_version: "Commercial Version",
+      commercial_version_desc:
+        "Supports more advanced features and a complete client interface, offering multi-person audio and video calls and video conferencing capabilities.",
+      purchase_title: "Commercial Version Procurement Process",
+      purchase_1: "Apply for a Trial",
+      purchase_2: "Submit Documentation",
+      purchase_3: "Sign Contract",
+      purchase_4: "Payment",
+      purchase_5: "Product Delivery",
+      contact_title: "Contact Us",
+      contact_desc: "For more information, please contact contact@openim.io",
+      contact_with: "Contact contact@openim.io",
+    },
   },
 };
 

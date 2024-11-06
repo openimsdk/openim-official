@@ -263,6 +263,27 @@ const zh = {
     },
     contact:
       "目前，OpenCorp针对企业用户提供体验版本。如贵公司有兴趣进行体验，请通过电子邮件联系我们：contact@openim.io。我们期待与您合作！",
+    part4: {
+      title: "OpenIMSDK 版本说明",
+      version_compare: "版本对比",
+      version_title: "版本",
+      desc_title: "说明",
+      opensource_version: "开源版",
+      commercial_version: "商业版",
+      opensource_version_desc:
+        "提供针对 IM 的完整 SDK 和服务器，客户端包含简单的 demo。",
+      commercial_version_desc:
+        "支持更多高级功能和完整的客户端界面，提供多人音视频通话及视频会议功能。",
+      purchase_title: "商业版采购流程",
+      purchase_1: "申请试用",
+      purchase_2: "提交资料",
+      purchase_3: "签订合同",
+      purchase_4: "支付款项",
+      purchase_5: "交付产品",
+      contact_title: "联系我们",
+      contact_desc: "如需详细信息，请联系 contact@openim.io",
+      contact_with: "联系 contact@openim.io",
+    },
   },
 };
 

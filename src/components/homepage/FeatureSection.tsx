@@ -13,7 +13,7 @@ const FeatureSection = ({ dictionary }: { dictionary: Dictionary }) => {
             alt=""
             width={640}
             height={536}
-            quality={100}
+            quality={75}
           />
         </div>
         <div className="pt-16 md:order-1 md:w-5/12 lg:pt-28">
@@ -45,7 +45,7 @@ const FeatureSection = ({ dictionary }: { dictionary: Dictionary }) => {
             alt=""
             width={640}
             height={536}
-            quality={100}
+            quality={75}
           />
         </div>
         <div className=" pt-16 md:order-1 md:w-5/12 lg:pt-28">
@@ -77,7 +77,7 @@ const FeatureSection = ({ dictionary }: { dictionary: Dictionary }) => {
             alt=""
             width={550}
             height={436}
-            quality={100}
+            quality={75}
           />
           <Image
             className="absolute  bottom-0 right-0 md:bottom-auto md:mt-32 "
@@ -116,7 +116,7 @@ const FeatureSection = ({ dictionary }: { dictionary: Dictionary }) => {
             alt=""
             width={640}
             height={536}
-            quality={100}
+            quality={75}
           />
         </div>
         <div className=" pt-16 md:order-1 md:w-5/12 lg:pt-28">

@@ -55,7 +55,7 @@ const CodeStartSection = ({
           width={520}
           height={433}
           src="/images/code_bg.png"
-          quality={100}
+          quality={75}
           alt="code"
         />
       </div>

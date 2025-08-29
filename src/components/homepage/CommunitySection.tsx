@@ -92,7 +92,7 @@ const CommunitySection = ({
                 alt=""
                 width={2187}
                 height={1669}
-                quality={100}
+                quality={75}
                 className="bg-amber-50"
               />
             </div>

@@ -39,8 +39,8 @@ const About = async ({ params: { lang } }: { params: { lang: Locale } }) => {
             className="absolute hidden lg:-right-40 lg:top-10 lg:block"
             src="/images/hero.png"
             alt=""
-            width={700}
-            height={700}
+            width={720}
+            height={540}
           />
         </ul>
       </div>

@@ -78,8 +78,8 @@ const AdvantagesSection = ({ dictionary }: { dictionary: Dictionary }) => {
             style={{ width: "100%", height: "auto" }}
             src="/images/advantages_bg.png"
             alt="advantages_bg"
-            width={1083}
-            height={557}
+            width={720}
+            height={405}
             quality={60}
           />
         </div>

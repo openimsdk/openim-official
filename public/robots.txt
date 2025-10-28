@@ -1,0 +1,15 @@
+# Only allow Google, Bing, Baidu, Yandex to crawl
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Baiduspider
+Disallow:
+
+User-agent: YandexBot
+Disallow:
+
+User-agent: *
+Disallow: /
